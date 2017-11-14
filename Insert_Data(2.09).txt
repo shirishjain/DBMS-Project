@@ -1,0 +1,1057 @@
+Set Search_path to car_rental;
+begin;
+insert into City values
+('Surat','Gujarat');
+insert into City values
+('Ahmedabad','Gujarat');
+insert into City values
+('Rajkot','Gujarat');
+insert into City values
+('Gandhinagar','Gujarat');
+insert into City values
+('Vadodara','Gujarat');
+insert into City values
+('Udaipur','Rajasthan');
+insert into City values
+('Jaipur','Rajasthan');
+insert into City values
+('Ajmer','Rajasthan');
+insert into City values
+('Bhilwara','Rajasthan');
+insert into City values
+('Bhopal','Madhya Pradesh');
+insert into City values
+('Hyderabad','Telangana');
+insert into City values
+('Bangalore','Karnataka');
+insert into City values
+('Indore','Madhya Pradesh');
+insert into City values
+('Noida','Uttar Pradesh');
+insert into City values
+('Agra','Uttar Pardesh');
+insert into City values
+('Mumbai','Maharashtra');
+insert into City values
+('Amritsar','Punjab');
+insert into City values
+('Jaisalmer','Rajasthan');
+insert into City values
+('Nagpur','Maharashtra');
+insert into City values
+('Pune','Maharashtra');
+
+
+
+INSERT INTO customer VALUES(1,'Harsh',TO_DATE('11/10/1972', 'DD/MM/YYYY'),'M','Adajan','Surat',395009);
+INSERT INTO customer VALUES(2,'Dhruti',TO_DATE('21/05/1992', 'DD/MM/YYYY'),'F','Piplod','Surat',395007);
+INSERT INTO customer VALUES(3,'Dhark',TO_DATE('17/07/1998', 'DD/MM/YYYY'),'M','C.G. Road','Ahmedabad',129113);
+INSERT INTO customer VALUES(4,'Hetal',TO_DATE('21/05/1982', 'DD/MM/YYYY'),'F','Kalupur','Ahmedabad',129117);
+INSERT INTO customer VALUES(5,'Megh',TO_DATE('12/08/1997', 'DD/MM/YYYY'),'M','Vajdi','Rajkot',222345);
+INSERT INTO customer VALUES(6,'Shreya',TO_DATE('21/01/1989', 'DD/MM/YYYY'),'F','Crystal Mall','Rajkot',222406);
+INSERT INTO customer VALUES(7,'Mihir',TO_DATE('27/02/1982', 'DD/MM/YYYY'),'M','Infocity','Gandhinagar',322007);
+INSERT INTO customer VALUES(8,'Priya',TO_DATE('01/05/1992', 'DD/MM/YYYY'),'F','Gift City','Gandhinagar',322009);
+INSERT INTO customer VALUES(9,'Darshan',TO_DATE('23/05/1998', 'DD/MM/YYYY'),'M','Jagdish Temple','Udaipur',321990);
+INSERT INTO customer VALUES(10,'Aashita',TO_DATE('14/12/1984', 'DD/MM/YYYY'),'F','Lake Pichola','Udaipur',321005);
+INSERT INTO customer VALUES(11,'Shirish',TO_DATE('01/11/1977', 'DD/MM/YYYY'),'M','Jaipur Zoo','Jaipur',422117);
+INSERT INTO customer VALUES(12,'Anisha',TO_DATE('01/05/1972', 'DD/MM/YYYY'),'F','Bimla Mandir','Jaipur',422113);
+INSERT INTO customer VALUES(13,'Dhumil',TO_DATE('02/12/1989', 'DD/MM/YYYY'),'M','Nareli Temple','Ajmer',322779);
+INSERT INTO customer VALUES(14,'Prachi',TO_DATE('21/09/1985', 'DD/MM/YYYY'),'F','Ana Sagar','Ajmer',322777);
+INSERT INTO customer VALUES(15,'Priyank',TO_DATE('22/02/1994', 'DD/MM/YYYY'),'M','Rajwada','Indore',222139);
+INSERT INTO customer VALUES(16,'Alia',TO_DATE('15/01/1986', 'DD/MM/YYYY'),'F','Lal Bagh','Indore',227128);
+INSERT INTO customer VALUES(17,'Varun',TO_DATE('17/07/1984', 'DD/MM/YYYY'),'M','Rani Ka Mahel','Jaisalmer',221123);
+INSERT INTO customer VALUES(18,'Shraddha',TO_DATE('12/02/1989', 'DD/MM/YYYY'),'F','Raja Ka Mahel','Jaisalmer',229993);
+INSERT INTO customer VALUES(19,'Ashray',TO_DATE('17/05/1984', 'DD/MM/YYYY'),'M','Bandra','Mumbai',321193);
+INSERT INTO customer VALUES(20,'Keya',TO_DATE('18/08/1989', 'DD/MM/YYYY'),'F','Marine Drive','Mumbai',333999);
+INSERT INTO customer VALUES(21,'Palash',TO_DATE('11/01/1984', 'DD/MM/YYYY'),'M','Indira Nagar','Bangalore',423343);
+INSERT INTO customer VALUES(22,'Pooja',TO_DATE('05/06/1989', 'DD/MM/YYYY'),'F','M.G. Road','Bangalore',421223);
+INSERT INTO customer VALUES(23,'Harshit',TO_DATE('19/11/1985', 'DD/MM/YYYY'),'M','Airport Area','Nagpur',779933);
+INSERT INTO customer VALUES(24,'Anjali',TO_DATE('11/06/1980', 'DD/MM/YYYY'),'F','Ambazari Lake','Nagpur',227793);
+INSERT INTO customer VALUES(25,'Rishabh',TO_DATE('15/05/1997', 'DD/MM/YYYY'),'M','Arjun Nagar','Agra',882233);
+INSERT INTO customer VALUES(26,'Saloni',TO_DATE('09/08/1994', 'DD/MM/YYYY'),'F','Vaibhav Nagar','Agra',889939);
+INSERT INTO customer VALUES(27,'Jay',TO_DATE('14/01/1984', 'DD/MM/YYYY'),'M','Kharadi','Pune',399222);
+INSERT INTO customer VALUES(28,'Kiran',TO_DATE('11/02/1989', 'DD/MM/YYYY'),'F','Wakad','Pune',399111);
+INSERT INTO customer VALUES(29,'Rakesh',TO_DATE('29/05/1994', 'DD/MM/YYYY'),'M','O.P. Road','Vadodara',553399);
+INSERT INTO customer VALUES(30,'Kalpana',TO_DATE('21/06/1986', 'DD/MM/YYYY'),'F','Subhanpura','Vadodara',553390);
+INSERT INTO customer VALUES(31,'Sahil',TO_DATE('30/02/1996', 'DD/MM/YYYY'),'M','Airport Road','Amritsar',773354);
+INSERT INTO customer VALUES(32,'Himani',TO_DATE('01/07/1985', 'DD/MM/YYYY'),'F','G.T. Road','Amritsar',771111);
+INSERT INTO customer VALUES(33,'Yash',TO_DATE('22/06/1994', 'DD/MM/YYYY'),'M','M.P. Nagar','Bhopal',112233);
+INSERT INTO customer VALUES(34,'Amrita',TO_DATE('22/09/1996', 'DD/MM/YYYY'),'F','Gautam Nagar','Bhopal',112239);
+INSERT INTO customer VALUES(35,'Gaurav',TO_DATE('22/05/1994', 'DD/MM/YYYY'),'M','R.C. Vyas ','Bhilwara',311001);
+INSERT INTO customer VALUES(36,'Geetika',TO_DATE('01/12/1986', 'DD/MM/YYYY'),'F','Shastri Nagar','Bhilwara',311007);
+INSERT INTO customer VALUES(37,'Rahul',TO_DATE('11/06/1974', 'DD/MM/YYYY'),'M','Uppal','Hyderabad',911007);
+INSERT INTO customer VALUES(38,'Riddhi',TO_DATE('31/05/1986', 'DD/MM/YYYY'),'F','Manikonda','Hyderabad',911009);
+INSERT INTO customer VALUES(39,'Parth',TO_DATE('19/05/1994', 'DD/MM/YYYY'),'M','Bharat Nagar','Noida',119988);
+INSERT INTO customer VALUES(40,'Priyanshi',TO_DATE('01/06/1989', 'DD/MM/YYYY'),'F','G.P. Road','Noida',119983);
+INSERT INTO customer VALUES(41,'Ritu',TO_DATE('12/10/1984', 'DD/MM/YYYY'),'F','Lake Pichola','Udaipur',321005);
+INSERT INTO customer VALUES(42,'Monik',TO_DATE('03/11/1977', 'DD/MM/YYYY'),'M','Jaipur Zoo','Jaipur',422117);
+INSERT INTO customer VALUES(43,'Divya',TO_DATE('04/05/1972', 'DD/MM/YYYY'),'F','Bimla Mandir','Jaipur',422113);
+INSERT INTO customer VALUES(44,'Divyanshu',TO_DATE('05/11/1989', 'DD/MM/YYYY'),'M','Nareli Temple','Ajmer',322779);
+INSERT INTO customer VALUES(45,'Steffi',TO_DATE('26/05/1985', 'DD/MM/YYYY'),'F','Ana Sagar','Ajmer',322777);
+INSERT INTO customer VALUES(46,'Rutvik',TO_DATE('27/06/1994', 'DD/MM/YYYY'),'M','Rajwada','Indore',222139);
+INSERT INTO customer VALUES(47,'Aishwariya',TO_DATE('18/07/1986', 'DD/MM/YYYY'),'F','Lal Bagh','Indore',227128);
+INSERT INTO customer VALUES(48,'Salman',TO_DATE('19/06/1984', 'DD/MM/YYYY'),'M','Rani Ka Mahel','Jaisalmer',221123);
+INSERT INTO customer VALUES(49,'Gauri',TO_DATE('10/05/1989', 'DD/MM/YYYY'),'F','Raja Ka Mahel','Jaisalmer',229993);
+INSERT INTO customer VALUES(50,'Shahrukh',TO_DATE('01/07/1984', 'DD/MM/YYYY'),'M','Bandra','Mumbai',321193);
+
+
+INSERT INTO Vehicle VALUES
+(1001,'Swift Desire',12,'Sedan',6025,800);
+INSERT INTO Vehicle VALUES
+(1002,'Audi A6',25,'Sedan',9584,3000);
+INSERT INTO Vehicle VALUES
+(1003,'Mercedes Benz C Class',27,'Sedan',8421,3500);
+INSERT INTO Vehicle VALUES
+(1004,'BMW 3 Series',29,'Sedan',7874,3300);
+INSERT INTO Vehicle VALUES
+(1005,'Skoda Rapid',14,'Sedan',15856,1000);
+INSERT INTO Vehicle VALUES
+(1006,'Honda City',15,'Sedan',9487,900);
+INSERT INTO Vehicle VALUES
+(1007,'Honda Amaze',14,'Sedan',10545,850);
+INSERT INTO Vehicle VALUES
+(1008,'Volkswagen Vento',15,'Sedan',16421,900);
+INSERT INTO Vehicle VALUES
+(1009,'Hyundai Verna',13,'Sedan',13485,950);
+
+INSERT INTO Vehicle VALUES
+(1010,'Swift Desire',12,'Sedan',7225,800);
+INSERT INTO Vehicle VALUES
+(1011,'Audi A6',25,'Sedan',6465,3000);
+INSERT INTO Vehicle VALUES
+(1012,'Mercedes Benz C Class',27,'Sedan',8964,3500);
+INSERT INTO Vehicle VALUES
+(1013,'BMW 3 Series',29,'Sedan',26453,3300);
+INSERT INTO Vehicle VALUES
+(1014,'Skoda Rapid',14,'Sedan',19556,1000);
+INSERT INTO Vehicle VALUES
+(1015,'Honda City',15,'Sedan',7456,900);
+INSERT INTO Vehicle VALUES
+(1016,'Honda Amaze',14,'Sedan',21323,850);
+INSERT INTO Vehicle VALUES
+(1017,'Volkswagen Vento',15,'Sedan',6894,900);
+INSERT INTO Vehicle VALUES
+(1018,'Hyundai Verna',13,'Sedan',25612,950);
+
+
+INSERT INTO Vehicle VALUES
+(1019,'BMW X6',35,'SUV',23165,5500);
+INSERT INTO Vehicle VALUES
+(1020,'Mahindra Scorpio',19,'SUV',15165,3500);
+INSERT INTO Vehicle VALUES
+(1021,'Mahindra XUV',22,'SUV',24513,3700);
+INSERT INTO Vehicle VALUES
+(1022,'Toyota Innova',21,'SUV',16516,3800);
+INSERT INTO Vehicle VALUES
+(1023,'Audi Q5',32,'SUV',56789,5000);
+INSERT INTO Vehicle VALUES
+(1024,'Hyundai Creta',20,'SUV',34566,4000);
+INSERT INTO Vehicle VALUES
+(1025,'Vitara Brezza',17,'SUV',12356,3900);
+INSERT INTO Vehicle VALUES
+(1026,'Renault Duster',18,'SUV',34653,4100);
+
+INSERT INTO Vehicle VALUES
+(1027,'BMW X6',35,'SUV',44156,5500);
+INSERT INTO Vehicle VALUES
+(1028,'Mahindra Scorpio',19,'SUV',25525,3500);
+INSERT INTO Vehicle VALUES
+(1029,'Mahindra XUV',22,'SUV',12456,3700);
+INSERT INTO Vehicle VALUES
+(1030,'Toyota Innova',21,'SUV',48666,3800);
+INSERT INTO Vehicle VALUES
+(1031,'Audi Q5',32,'SUV',13155,5000);
+INSERT INTO Vehicle VALUES
+(1032,'Hyundai Creta',20,'SUV',41534,4000);
+INSERT INTO Vehicle VALUES
+(1033,'Vitara Brezza',17,'SUV',15659,3900);
+INSERT INTO Vehicle VALUES
+(1034,'Renault Duster',18,'SUV',34652,4100);
+
+
+
+INSERT INTO Vehicle VALUES
+(1035,'Hyundai Grand i10',9,'Hatchback',34564,850);
+INSERT INTO Vehicle VALUES
+(1036,'Volkswagen Polo',12,'Hatchback',53215,900);
+INSERT INTO Vehicle VALUES
+(1037,'Nissan Micra',13,'Hatchback',35136,800);
+INSERT INTO Vehicle VALUES
+(1038,'Swift',9,'Hatchback',12132,750);
+INSERT INTO Vehicle VALUES
+(1039,'Volvo V40',17,'Hatchback',13213,950);
+INSERT INTO Vehicle VALUES
+(1040,'Celerio',8,'Hatchback',21324,700);
+INSERT INTO Vehicle VALUES
+(1041,'Honda Jazz',13,'Hatchback',13241,950);
+INSERT INTO Vehicle VALUES
+(1042,'Ford Figo',10,'Hatchback',41332,850);
+
+INSERT INTO Vehicle VALUES
+(1043,'Hyundai Grand i10',9,'Hatchback',32465,850);
+INSERT INTO Vehicle VALUES
+(1044,'Volkswagen Polo',12,'Hatchback',54524,900);
+INSERT INTO Vehicle VALUES
+(1045,'Nissan Micra',13,'Hatchback',32755,800);
+INSERT INTO Vehicle VALUES
+(1046,'Swift',9,'Hatchback',38975,750);
+INSERT INTO Vehicle VALUES
+(1047,'Volvo V40',17,'Hatchback',13415,950);
+INSERT INTO Vehicle VALUES
+(1048,'Celerio',8,'Hatchback',14345,700);
+INSERT INTO Vehicle VALUES
+(1049,'Honda Jazz',13,'Hatchback',24255,950);
+INSERT INTO Vehicle VALUES
+(1050,'Ford Figo',10,'Hatchback',52455,850);
+
+
+
+
+
+INSERT INTO d_allowances VALUES
+(101,400);
+INSERT INTO d_allowances VALUES
+(102,450);
+INSERT INTO d_allowances VALUES
+(103,350);
+INSERT INTO d_allowances VALUES
+(104,400);
+INSERT INTO d_allowances VALUES
+(105,450);
+INSERT INTO d_allowances VALUES
+(106,400);
+INSERT INTO d_allowances VALUES
+(107,350);
+INSERT INTO d_allowances VALUES
+(108,400);
+INSERT INTO d_allowances VALUES
+(109,450);
+INSERT INTO d_allowances VALUES
+(110,500);
+INSERT INTO d_allowances VALUES
+(111,450);
+INSERT INTO d_allowances VALUES
+(112,550);
+INSERT INTO d_allowances VALUES
+(113,480);
+INSERT INTO d_allowances VALUES
+(114,390);
+INSERT INTO d_allowances VALUES
+(115,420);
+INSERT INTO d_allowances VALUES
+(116,460);
+INSERT INTO d_allowances VALUES
+(117,500);
+INSERT INTO d_allowances VALUES
+(118,380);
+INSERT INTO d_allowances VALUES
+(119,420);
+INSERT INTO d_allowances VALUES
+(120,400);
+INSERT INTO d_allowances VALUES
+(121,410);
+INSERT INTO d_allowances VALUES
+(122,460);
+INSERT INTO d_allowances VALUES
+(123,450);
+INSERT INTO d_allowances VALUES
+(124,470);
+INSERT INTO d_allowances VALUES
+(125,500);
+INSERT INTO d_allowances VALUES
+(126,450);
+INSERT INTO d_allowances VALUES
+(127,490);
+INSERT INTO d_allowances VALUES
+(128,380);
+INSERT INTO d_allowances VALUES
+(129,370);
+INSERT INTO d_allowances VALUES
+(130,510);
+INSERT INTO d_allowances VALUES
+(131,460);
+INSERT INTO d_allowances VALUES
+(132,440);
+INSERT INTO d_allowances VALUES
+(133,500);
+INSERT INTO d_allowances VALUES
+(134,480);
+INSERT INTO d_allowances VALUES
+(135,490);
+INSERT INTO d_allowances VALUES
+(136,500);
+INSERT INTO d_allowances VALUES
+(137,430);
+INSERT INTO d_allowances VALUES
+(138,440);
+INSERT INTO d_allowances VALUES
+(139,450);
+INSERT INTO d_allowances VALUES
+(140,480);
+
+
+
+INSERT INTO Driver VALUES
+(01,101,'Bhavan',TO_DATE('19/06/1970','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(02,102,'Jaysukh',TO_DATE('25/05/1974','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(03,103,'Pankaj',TO_DATE('06/07/1975','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(04,104,'Deepak',TO_DATE('08/08/1981','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(05,105,'Virendra',TO_DATE('22/09/1979','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(06,106,'Bhailal',TO_DATE('13/11/1980','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(07,107,'Kanti',TO_DATE('08/12/1982','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(08,108,'Jayanti',TO_DATE('10/08/1973','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(09,109,'Raju',TO_DATE('11/07/1976','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(10,110,'Bhupat',TO_DATE('15/04/1979','DD/MM/YYYY'),'M');
+
+INSERT INTO Driver VALUES
+(11,111,'Dhansukh',TO_DATE('14/06/1970','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(12,112,'Pravin',TO_DATE('06/05/1974','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(13,113,'Paresh',TO_DATE('15/07/1975','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(14,114,'Sanjay',TO_DATE('28/08/1981','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(15,115,'Amit',TO_DATE('29/09/1979','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(16,116,'Puneet',TO_DATE('17/11/1980','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(17,117,'Mukesh',TO_DATE('12/12/1982','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(18,118,'Kamlesh',TO_DATE('19/08/1973','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(19,119,'Bhavesh',TO_DATE('04/07/1976','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(20,120,'Bipin',TO_DATE('03/04/1979','DD/MM/YYYY'),'M');
+
+
+INSERT INTO Driver VALUES
+(21,121,'Umang',TO_DATE('19/06/1970','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(22,122,'Pratik',TO_DATE('02/05/1974','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(23,123,'Hardik',TO_DATE('06/07/1975','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(24,124,'Akshit',TO_DATE('07/08/1981','DD/MM/YYYY'),'M');
+INSERT INTO Driver VALUES
+(25,125,'Shashank',TO_DATE('12/09/1979','DD/MM/YYYY'),'M');
+
+INSERT INTO Driver VALUES
+(26,126,'Ruchi',TO_DATE('15/06/1980','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(27,127,'Anamika',TO_DATE('24/07/1981','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(28,128,'Kritika',TO_DATE('16/08/1982','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(29,129,'Alisha',TO_DATE('02/09/1983','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(30,130,'Bhavika',TO_DATE('21/06/1984','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(31,131,'Shreyal',TO_DATE('26/07/1987','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(32,132,'Avni',TO_DATE('16/09/1989','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(33,133,'Tanisha',TO_DATE('18/11/1988','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(34,134,'Naina',TO_DATE('01/12/1986','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(35,135,'Nidhi',TO_DATE('09/01/1985','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(36,136,'Kangana',TO_DATE('12/02/1990','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(37,137,'Shruti',TO_DATE('19/03/1987','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(38,138,'Vaidehi',TO_DATE('12/04/1983','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(39,139,'Ragini',TO_DATE('17/05/1982','DD/MM/YYYY'),'F');
+INSERT INTO Driver VALUES
+(40,140,'Yami',TO_DATE('26/06/1987','DD/MM/YYYY'),'F');
+commit;
+
+
+
+
+INSERT INTO customer_email VALUES(1,'harsh@gmail.com');
+INSERT INTO customer_email VALUES(1,'harsh123@gmail.com');
+INSERT INTO customer_email VALUES(2,'dhruti@gmail.com');
+INSERT INTO customer_email VALUES(3,'dhark@gmail.com');
+INSERT INTO customer_email VALUES(3,'dhark123@gmail.com');
+INSERT INTO customer_email VALUES(4,'hetal@gmail.com');
+INSERT INTO customer_email VALUES(5,'megh@gmail.com');
+INSERT INTO customer_email VALUES(6,'shreya@gmail.com');
+INSERT INTO customer_email VALUES(7,'mihir@gmail.com');
+INSERT INTO customer_email VALUES(8,'priya@gmail.com');
+INSERT INTO customer_email VALUES(9,'darshan@gmail.com');
+INSERT INTO customer_email VALUES(10,'aashita@gmail.com');
+INSERT INTO customer_email VALUES(11,'shirish@gmail.com');
+INSERT INTO customer_email VALUES(12,'anisha@gmail.com');
+INSERT INTO customer_email VALUES(13,'dhumil@gmail.com');
+INSERT INTO customer_email VALUES(14,'prachi@gmail.com');
+INSERT INTO customer_email VALUES(15,'priyan@gmail.com');
+INSERT INTO customer_email VALUES(16,'alia@gmail.com');
+INSERT INTO customer_email VALUES(16,'alia123@gmail.com');
+INSERT INTO customer_email VALUES(17,'varun@gmail.com');
+INSERT INTO customer_email VALUES(18,'shraddha@gmail.com');
+INSERT INTO customer_email VALUES(19,'ashray@gmail.com');
+INSERT INTO customer_email VALUES(20,'keya@gmail.com');
+INSERT INTO customer_email VALUES(21,'palash@gmail.com');
+INSERT INTO customer_email VALUES(22,'pooja@gmail.com');
+INSERT INTO customer_email VALUES(23,'harshit@gmail.com');
+INSERT INTO customer_email VALUES(24,'anjali@gmail.com');
+INSERT INTO customer_email VALUES(25,'rishabh@gmail.com');
+INSERT INTO customer_email VALUES(26,'saloni@gmail.com');
+INSERT INTO customer_email VALUES(27,'jay@gmail.com');
+INSERT INTO customer_email VALUES(27,'jay123@gmail.com');
+INSERT INTO customer_email VALUES(28,'kiran@gmail.com');
+INSERT INTO customer_email VALUES(29,'rakesh@gmail.com');
+INSERT INTO customer_email VALUES(30,'kalpana@gmail.com');
+INSERT INTO customer_email VALUES(31,'sahil@gmail.com');
+INSERT INTO customer_email VALUES(32,'himani@gmail.com');
+INSERT INTO customer_email VALUES(33,'yash@gmail.com');
+INSERT INTO customer_email VALUES(34,'amrita@gmail.com');
+INSERT INTO customer_email VALUES(35,'gaurav@gmail.com');
+INSERT INTO customer_email VALUES(36,'geetika@gmail.com');
+INSERT INTO customer_email VALUES(36,'geetika123@gmail.com');
+INSERT INTO customer_email VALUES(37,'rahul@gmail.com');
+INSERT INTO customer_email VALUES(38,'riddhi@gmail.com');
+INSERT INTO customer_email VALUES(39,'parth@gmail.com');
+INSERT INTO customer_email VALUES(40,'priyanshi@gmail.com');
+INSERT INTO customer_email VALUES(41,'ritu@gmail.com');
+INSERT INTO customer_email VALUES(42,'monik@gmail.com');
+INSERT INTO customer_email VALUES(43,'divya@gmail.com');
+INSERT INTO customer_email VALUES(44,'divyanshu@gmail.com');
+INSERT INTO customer_email VALUES(45,'steffi@gmail.com');
+INSERT INTO customer_email VALUES(46,'rutvik@gmail.com');
+INSERT INTO customer_email VALUES(47,'aishwariya@gmail.com');
+INSERT INTO customer_email VALUES(48,'salman@gmail.com');
+INSERT INTO customer_email VALUES(49,'gauri@gmail.com');
+INSERT INTO customer_email VALUES(50,'shahrukh@gmail.com');
+INSERT INTO customer_email VALUES(50,'shahrukh123@gmail.com');
+
+
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (1, 14, 1007, true, 598, 1000, '09/22/2017', '09/13/2017', 'Surat', 'Bangalore', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (2, 9, 1028, true, 1125, 1000, '09/18/2017', '09/13/2017', 'Noida', 'Surat', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (3, 49, 1014, true, 2707, 1500, '09/17/2017', '09/22/2017', 'Ahmedabad', 'Bhopal', 29);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (4, 7, 1045, true, 4655, 1500, '09/21/2017', '09/28/2017', 'Mumbai', 'Ahmedabad', 10);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (5, 42, 1015, false, 3328, 1500, '09/17/2017', '09/13/2017', 'Jaipur', 'Ahmedabad', 33);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (6, 17, 1008, true, 622, 500, '09/23/2017', '09/25/2017', 'Noida', 'Ahmedabad', 10);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (7, 47, 1047, false, 3704, 1500, '09/06/2017', '09/12/2017', 'Udaipur', 'Amritsar', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (8, 36, 1014, true, 893, 500, '09/23/2017', '09/16/2017', 'Bhilwara', 'Bhilwara', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (9, 30, 1024, true, 3399, 500, '09/25/2017', '09/02/2017', 'Surat', 'Surat', 20);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (10, 29, 1014, true, 3905, 500, '09/02/2017', '09/16/2017', 'Jaipur', 'Amritsar', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (11, 14, 1044, true, 4305, 500, '09/27/2017', '09/22/2017', 'Jaisalmer', 'Bangalore', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (12, 41, 1023, true, 2477, 1000, '09/22/2017', '09/02/2017', 'Pune', 'Bangalore', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (13, 4, 1045, true, 4203, 1500, '09/27/2017', '09/06/2017', 'Jaisalmer', 'Gandhinagar', 32);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (14, 4, 1009, true, 2330, 1500, '09/18/2017', '09/10/2017', 'Surat', 'Amritsar', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (15, 10, 1022, false, 3973, 500, '09/09/2017', '09/02/2017', 'Hyderabad', 'Bangalore', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (16, 28, 1037, true, 3289, 1000, '09/23/2017', '09/02/2017', 'Mumbai', 'Jaipur', 29);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (17, 26, 1031, true, 1385, 1000, '09/24/2017', '09/10/2017', 'Pune', 'Rajkot', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (18, 19, 1010, true, 1289, 1500, '09/26/2017', '09/07/2017', 'Ajmer', 'Agra', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (19, 40, 1002, false, 3708, 500, '09/05/2017', '09/26/2017', 'Agra', 'Nagpur', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (20, 15, 1024, true, 288, 1000, '09/24/2017', '09/01/2017', 'Noida', 'Rajkot', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (21, 14, 1004, true, 3656, 1000, '09/03/2017', '09/10/2017', 'Noida', 'Pune', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (22, 15, 1006, true, 3645, 1000, '09/05/2017', '09/09/2017', 'Amritsar', 'Nagpur', 31);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (23, 7, 1029, true, 1439, 500, '09/28/2017', '09/09/2017', 'Jaipur', 'Jaipur', 20);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (24, 43, 1008, true, 368, 1500, '09/13/2017', '09/20/2017', 'Ajmer', 'Amritsar', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (25, 41, 1010, false, 2714, 1000, '09/27/2017', '09/14/2017', 'Ajmer', 'Udaipur', 1);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (26, 10, 1044, true, 3076, 1500, '09/15/2017', '09/05/2017', 'Bhilwara', 'Gandhinagar', 17);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (27, 29, 1043, true, 1298, 500, '09/05/2017', '09/05/2017', 'Bangalore', 'Bangalore', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (28, 6, 1010, true, 3533, 500, '09/14/2017', '09/27/2017', 'Nagpur', 'Bhilwara', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (29, 49, 1037, false, 1829, 1500, '09/03/2017', '09/06/2017', 'Rajkot', 'Hyderabad', 21);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (30, 29, 1019, true, 1795, 1000, '09/28/2017', '09/26/2017', 'Udaipur', 'Indore', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (31, 28, 1044, true, 395, 1000, '09/29/2017', '09/13/2017', 'Indore', 'Ahmedabad', 4);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (32, 26, 1025, false, 860, 1000, '09/09/2017', '09/09/2017', 'Bhilwara', 'Indore', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (33, 47, 1012, false, 200, 500, '09/16/2017', '09/24/2017', 'Bhopal', 'Noida', 9);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (34, 23, 1009, true, 4521, 1000, '09/27/2017', '09/29/2017', 'Hyderabad', 'Nagpur', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (35, 14, 1002, false, 2627, 1500, '09/18/2017', '09/15/2017', 'Rajkot', 'Bhopal', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (36, 32, 1016, true, 116, 1000, '09/18/2017', '09/07/2017', 'Bhilwara', 'Mumbai', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (37, 46, 1006, false, 1581, 500, '09/20/2017', '09/09/2017', 'Nagpur', 'Noida', 36);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (38, 12, 1041, true, 1339, 1500, '09/10/2017', '09/28/2017', 'Mumbai', 'Hyderabad', 37);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (39, 43, 1043, false, 2222, 1500, '09/10/2017', '09/27/2017', 'Hyderabad', 'Jaipur', 18);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (40, 13, 1005, false, 3152, 1500, '09/08/2017', '09/24/2017', 'Noida', 'Amritsar', 28);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (41, 16, 1045, true, 1998, 1000, '09/03/2017', '09/29/2017', 'Noida', 'Ahmedabad', 7);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (42, 15, 1024, true, 3071, 500, '09/09/2017', '09/19/2017', 'Amritsar', 'Bhilwara', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (43, 24, 1007, false, 1210, 1000, '09/16/2017', '09/23/2017', 'Gandhinagar', 'Surat', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (44, 13, 1050, true, 167, 1500, '09/12/2017', '09/06/2017', 'Gandhinagar', 'Hyderabad', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (45, 23, 1034, true, 1705, 500, '09/09/2017', '09/13/2017', 'Agra', 'Pune', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (46, 19, 1017, false, 4597, 1500, '09/08/2017', '09/15/2017', 'Pune', 'Jaisalmer', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (47, 1, 1010, false, 1498, 1000, '09/16/2017', '09/27/2017', 'Ajmer', 'Hyderabad', 2);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (48, 37, 1007, true, 2509, 1500, '09/21/2017', '09/24/2017', 'Udaipur', 'Bangalore', 36);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (49, 20, 1024, false, 2149, 1000, '09/21/2017', '09/13/2017', 'Agra', 'Nagpur', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (50, 24, 1037, true, 1914, 500, '09/23/2017', '09/21/2017', 'Jaipur', 'Jaisalmer', 1);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (51, 4, 1024, true, 3420, 500, '09/26/2017', '09/06/2017', 'Noida', 'Udaipur', 37);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (52, 45, 1030, true, 3214, 1000, '09/05/2017', '09/09/2017', 'Amritsar', 'Jaipur', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (53, 3, 1040, false, 2200, 1500, '09/09/2017', '09/15/2017', 'Jaisalmer', 'Bhilwara', 7);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (54, 29, 1004, false, 4129, 500, '09/10/2017', '09/29/2017', 'Agra', 'Noida', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (55, 27, 1033, false, 2027, 500, '09/01/2017', '09/14/2017', 'Surat', 'Rajkot', 9);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (56, 28, 1009, true, 2447, 1000, '09/20/2017', '09/23/2017', 'Jaipur', 'Bangalore', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (57, 3, 1048, false, 4847, 1500, '09/18/2017', '09/26/2017', 'Vadodara', 'Mumbai', 9);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (58, 50, 1040, true, 1990, 1500, '09/28/2017', '09/09/2017', 'Agra', 'Udaipur', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (59, 19, 1040, false, 1276, 1500, '09/01/2017', '09/03/2017', 'Bangalore', 'Ajmer', 20);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (60, 12, 1034, true, 194, 1500, '09/15/2017', '09/13/2017', 'Ajmer', 'Bhilwara', 37);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (61, 19, 1010, true, 3652, 1500, '09/19/2017', '09/08/2017', 'Nagpur', 'Gandhinagar', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (62, 18, 1046, true, 2621, 1000, '09/27/2017', '09/22/2017', 'Noida', 'Agra', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (63, 46, 1034, true, 2194, 500, '09/27/2017', '09/04/2017', 'Pune', 'Udaipur', 12);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (64, 41, 1030, false, 1842, 1500, '09/27/2017', '09/25/2017', 'Agra', 'Bangalore', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (65, 20, 1045, false, 841, 1500, '09/08/2017', '09/04/2017', 'Bhopal', 'Indore', 4);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (66, 41, 1048, false, 1690, 1000, '09/23/2017', '09/06/2017', 'Rajkot', 'Noida', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (67, 44, 1030, false, 1869, 500, '09/11/2017', '09/14/2017', 'Noida', 'Jaipur', 20);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (68, 23, 1049, false, 4275, 500, '09/19/2017', '09/06/2017', 'Udaipur', 'Indore', 31);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (69, 16, 1026, true, 4524, 1000, '09/21/2017', '09/15/2017', 'Indore', 'Bhilwara', 4);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (70, 27, 1003, true, 1670, 1500, '09/09/2017', '09/27/2017', 'Nagpur', 'Pune', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (71, 5, 1014, false, 4497, 1500, '09/16/2017', '09/16/2017', 'Bhilwara', 'Udaipur', 37);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (72, 41, 1015, true, 2506, 1500, '09/09/2017', '09/03/2017', 'Jaipur', 'Bangalore', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (73, 44, 1033, true, 4144, 1000, '09/16/2017', '09/10/2017', 'Noida', 'Udaipur', 1);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (74, 48, 1042, true, 927, 500, '09/12/2017', '09/19/2017', 'Jaisalmer', 'Bhilwara', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (75, 41, 1033, false, 2633, 1000, '09/26/2017', '09/06/2017', 'Bangalore', 'Hyderabad', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (76, 31, 1034, true, 2874, 500, '09/28/2017', '09/22/2017', 'Pune', 'Vadodara', 11);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (77, 25, 1025, true, 3658, 1500, '09/18/2017', '09/13/2017', 'Bangalore', 'Surat', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (78, 21, 1022, true, 758, 1000, '09/19/2017', '09/16/2017', 'Jaisalmer', 'Hyderabad', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (79, 27, 1010, false, 1999, 1000, '09/24/2017', '09/25/2017', 'Pune', 'Hyderabad', 15);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (80, 7, 1044, false, 2250, 500, '09/02/2017', '09/21/2017', 'Noida', 'Gandhinagar', 36);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (81, 41, 1030, true, 2689, 500, '09/05/2017', '09/09/2017', 'Gandhinagar', 'Hyderabad', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (82, 48, 1030, false, 4108, 1500, '09/18/2017', '09/16/2017', 'Jaipur', 'Hyderabad', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (83, 7, 1026, false, 672, 500, '09/13/2017', '09/22/2017', 'Bhilwara', 'Nagpur', 31);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (84, 4, 1025, true, 476, 500, '09/10/2017', '09/08/2017', 'Hyderabad', 'Agra', 31);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (85, 40, 1006, false, 2936, 1000, '09/09/2017', '09/23/2017', 'Bangalore', 'Bhilwara', 24);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (86, 41, 1018, false, 3647, 1000, '09/01/2017', '09/22/2017', 'Bhilwara', 'Ahmedabad', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (87, 28, 1048, false, 2358, 500, '09/24/2017', '09/14/2017', 'Bhopal', 'Ahmedabad', 37);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (88, 35, 1024, false, 4523, 1000, '09/15/2017', '09/11/2017', 'Mumbai', 'Gandhinagar', 37);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (89, 39, 1047, true, 4002, 500, '09/16/2017', '09/13/2017', 'Hyderabad', 'Vadodara', 7);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (90, 17, 1034, true, 2199, 1000, '09/19/2017', '09/05/2017', 'Mumbai', 'Vadodara', 21);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (91, 25, 1045, false, 2285, 500, '09/04/2017', '09/11/2017', 'Bhopal', 'Hyderabad', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (92, 46, 1024, true, 990, 1000, '09/04/2017', '09/04/2017', 'Indore', 'Ahmedabad', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (93, 29, 1005, false, 2749, 1000, '09/23/2017', '09/07/2017', 'Mumbai', 'Ajmer', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (94, 30, 1027, true, 2532, 500, '09/03/2017', '09/11/2017', 'Mumbai', 'Udaipur', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (95, 8, 1004, true, 2637, 1000, '09/05/2017', '09/15/2017', 'Mumbai', 'Bhilwara', 26);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (96, 34, 1018, false, 565, 500, '09/01/2017', '09/24/2017', 'Ahmedabad', 'Jaisalmer', 10);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (97, 42, 1027, false, 242, 500, '09/11/2017', '09/22/2017', 'Bhopal', 'Surat', 33);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (98, 16, 1006, true, 4169, 500, '09/02/2017', '09/28/2017', 'Nagpur', 'Vadodara', 11);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (99, 25, 1049, false, 1070, 1500, '09/22/2017', '09/05/2017', 'Indore', 'Bangalore', 33);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (100, 28, 1019, true, 3686, 1000, '09/17/2017', '09/26/2017', 'Udaipur', 'Mumbai', 24);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (101, 43, 1040, true, 3123, 500, '09/09/2017', '09/21/2017', 'Udaipur', 'Nagpur', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (102, 24, 1027, true, 418, 1500, '09/27/2017', '09/16/2017', 'Mumbai', 'Vadodara', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (103, 3, 1003, false, 4287, 1500, '09/15/2017', '09/04/2017', 'Nagpur', 'Jaisalmer', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (104, 46, 1040, true, 1785, 1500, '09/27/2017', '09/04/2017', 'Pune', 'Vadodara', 15);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (105, 46, 1044, false, 1352, 1500, '09/26/2017', '09/07/2017', 'Jaipur', 'Indore', 28);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (106, 16, 1045, false, 658, 1500, '09/09/2017', '09/10/2017', 'Hyderabad', 'Bhilwara', 38);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (107, 26, 1050, true, 4587, 1000, '09/15/2017', '09/16/2017', 'Vadodara', 'Mumbai', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (108, 20, 1018, false, 680, 1500, '09/21/2017', '09/03/2017', 'Ajmer', 'Ahmedabad', 18);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (109, 13, 1037, true, 197, 1000, '09/03/2017', '09/15/2017', 'Vadodara', 'Hyderabad', 32);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (110, 37, 1013, false, 2455, 1000, '09/05/2017', '09/10/2017', 'Rajkot', 'Amritsar', 31);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (111, 12, 1025, false, 4069, 500, '09/08/2017', '09/29/2017', 'Noida', 'Noida', 28);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (112, 1, 1002, true, 2322, 1500, '09/06/2017', '09/09/2017', 'Jaisalmer', 'Amritsar', 29);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (113, 32, 1032, true, 1848, 1500, '09/02/2017', '09/23/2017', 'Nagpur', 'Pune', 11);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (114, 19, 1005, true, 412, 1500, '09/08/2017', '09/26/2017', 'Nagpur', 'Amritsar', 32);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (115, 45, 1031, false, 3284, 1500, '09/26/2017', '09/02/2017', 'Vadodara', 'Mumbai', 21);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (116, 44, 1021, false, 3147, 1500, '09/23/2017', '09/15/2017', 'Ajmer', 'Udaipur', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (117, 34, 1044, true, 392, 1000, '09/28/2017', '09/08/2017', 'Pune', 'Amritsar', 17);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (118, 19, 1037, true, 3393, 500, '09/24/2017', '09/19/2017', 'Jaipur', 'Amritsar', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (119, 27, 1050, true, 2950, 1500, '09/06/2017', '09/15/2017', 'Bhilwara', 'Jaisalmer', 4);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (120, 6, 1036, false, 4707, 1500, '09/26/2017', '09/07/2017', 'Rajkot', 'Indore', 33);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (121, 11, 1031, true, 1130, 500, '09/10/2017', '09/22/2017', 'Ahmedabad', 'Vadodara', 11);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (122, 24, 1046, true, 4421, 1000, '09/21/2017', '09/07/2017', 'Pune', 'Hyderabad', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (123, 9, 1027, false, 453, 1000, '09/04/2017', '09/14/2017', 'Ajmer', 'Indore', 9);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (124, 16, 1011, true, 3998, 1500, '09/21/2017', '09/15/2017', 'Ajmer', 'Agra', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (125, 15, 1003, true, 394, 500, '09/29/2017', '09/01/2017', 'Indore', 'Vadodara', 28);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (126, 9, 1045, true, 1072, 1500, '09/29/2017', '09/11/2017', 'Udaipur', 'Noida', 16);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (127, 15, 1047, true, 1881, 500, '09/05/2017', '09/14/2017', 'Pune', 'Noida', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (128, 2, 1024, true, 2304, 1500, '09/01/2017', '09/19/2017', 'Agra', 'Udaipur', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (129, 18, 1035, true, 320, 1500, '09/03/2017', '09/04/2017', 'Indore', 'Nagpur', 39);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (130, 43, 1007, false, 4413, 1000, '09/20/2017', '09/17/2017', 'Ajmer', 'Noida', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (131, 2, 1044, true, 2104, 1500, '09/12/2017', '09/02/2017', 'Nagpur', 'Jaisalmer', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (132, 33, 1032, false, 4935, 1000, '09/09/2017', '09/05/2017', 'Surat', 'Bangalore', 26);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (133, 27, 1019, true, 4591, 1500, '09/02/2017', '09/03/2017', 'Mumbai', 'Ajmer', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (134, 43, 1022, true, 2810, 1500, '09/15/2017', '09/26/2017', 'Bhilwara', 'Agra', 7);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (135, 27, 1003, true, 3984, 1500, '09/25/2017', '09/22/2017', 'Bhopal', 'Pune', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (136, 4, 1038, true, 4614, 500, '09/28/2017', '09/10/2017', 'Udaipur', 'Ajmer', 29);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (137, 8, 1008, true, 3830, 1000, '09/09/2017', '09/14/2017', 'Hyderabad', 'Mumbai', 16);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (138, 40, 1005, false, 3858, 500, '09/20/2017', '09/21/2017', 'Hyderabad', 'Ajmer', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (139, 31, 1007, false, 3198, 500, '09/15/2017', '09/23/2017', 'Bhopal', 'Bhilwara', 7);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (140, 7, 1036, false, 3582, 500, '09/14/2017', '09/12/2017', 'Jaisalmer', 'Pune', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (141, 41, 1040, false, 914, 1500, '09/15/2017', '09/16/2017', 'Bangalore', 'Jaisalmer', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (142, 41, 1048, false, 3629, 1000, '09/24/2017', '09/24/2017', 'Bhilwara', 'Jaisalmer', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (143, 13, 1025, true, 1008, 1500, '09/01/2017', '09/02/2017', 'Bhopal', 'Mumbai', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (144, 11, 1040, false, 3255, 500, '09/03/2017', '09/03/2017', 'Hyderabad', 'Jaipur', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (145, 18, 1015, true, 4295, 500, '09/28/2017', '09/22/2017', 'Indore', 'Amritsar', 26);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (146, 7, 1050, false, 823, 500, '09/29/2017', '09/11/2017', 'Gandhinagar', 'Gandhinagar', 39);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (147, 47, 1041, true, 1631, 1000, '09/15/2017', '09/19/2017', 'Hyderabad', 'Ajmer', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (148, 24, 1015, false, 4842, 1500, '09/06/2017', '09/22/2017', 'Surat', 'Jaipur', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (149, 23, 1026, false, 1867, 1500, '09/12/2017', '09/28/2017', 'Ajmer', 'Indore', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (150, 22, 1021, true, 2291, 1000, '09/05/2017', '09/08/2017', 'Noida', 'Amritsar', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (151, 42, 1001, false, 3391, 500, '09/05/2017', '09/07/2017', 'Mumbai', 'Rajkot', 36);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (152, 2, 1003, false, 2909, 500, '09/01/2017', '09/25/2017', 'Pune', 'Indore', 21);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (153, 24, 1009, true, 1290, 1500, '09/05/2017', '09/25/2017', 'Bhilwara', 'Bangalore', 24);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (154, 5, 1041, false, 3461, 500, '09/22/2017', '09/18/2017', 'Noida', 'Nagpur', 36);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (155, 5, 1014, false, 4675, 1000, '09/18/2017', '09/06/2017', 'Ahmedabad', 'Jaipur', 11);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (156, 7, 1010, false, 3208, 500, '09/23/2017', '09/27/2017', 'Noida', 'Ajmer', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (157, 3, 1026, false, 874, 500, '09/18/2017', '09/22/2017', 'Jaipur', 'Udaipur', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (158, 22, 1029, true, 927, 1500, '09/13/2017', '09/04/2017', 'Jaipur', 'Noida', 18);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (159, 17, 1049, false, 4459, 500, '09/07/2017', '09/02/2017', 'Agra', 'Udaipur', 37);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (160, 48, 1038, false, 3709, 1500, '09/14/2017', '09/26/2017', 'Hyderabad', 'Ahmedabad', 38);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (161, 2, 1026, true, 1577, 1500, '09/29/2017', '09/28/2017', 'Gandhinagar', 'Amritsar', 26);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (162, 49, 1014, false, 3504, 500, '09/27/2017', '09/11/2017', 'Noida', 'Amritsar', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (163, 46, 1001, true, 1987, 1500, '09/08/2017', '09/23/2017', 'Mumbai', 'Bangalore', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (164, 47, 1020, true, 1936, 1000, '09/17/2017', '09/03/2017', 'Mumbai', 'Pune', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (165, 40, 1012, false, 3165, 1500, '09/01/2017', '09/22/2017', 'Bhopal', 'Udaipur', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (166, 40, 1035, true, 3522, 1500, '09/03/2017', '09/01/2017', 'Surat', 'Jaisalmer', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (167, 36, 1021, false, 1868, 1500, '09/22/2017', '09/15/2017', 'Indore', 'Jaipur', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (168, 23, 1021, false, 1945, 1000, '09/24/2017', '09/23/2017', 'Mumbai', 'Bangalore', 37);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (169, 17, 1026, false, 3376, 1500, '09/06/2017', '09/22/2017', 'Noida', 'Indore', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (170, 12, 1043, false, 2067, 500, '09/27/2017', '09/20/2017', 'Indore', 'Vadodara', 28);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (171, 26, 1005, true, 850, 500, '09/10/2017', '09/13/2017', 'Ajmer', 'Noida', 39);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (172, 36, 1030, false, 4863, 1500, '09/24/2017', '09/25/2017', 'Indore', 'Pune', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (173, 6, 1050, false, 1170, 500, '09/29/2017', '09/05/2017', 'Udaipur', 'Bhilwara', 10);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (174, 43, 1033, true, 256, 1000, '09/15/2017', '09/23/2017', 'Agra', 'Rajkot', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (175, 34, 1044, false, 1231, 500, '09/16/2017', '09/20/2017', 'Udaipur', 'Bhopal', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (176, 25, 1017, true, 3325, 1500, '09/12/2017', '09/12/2017', 'Mumbai', 'Amritsar', 2);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (177, 31, 1020, false, 2264, 1000, '09/12/2017', '09/09/2017', 'Noida', 'Nagpur', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (178, 45, 1004, true, 540, 1500, '09/15/2017', '09/28/2017', 'Noida', 'Jaipur', 37);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (179, 15, 1034, false, 2197, 500, '09/09/2017', '09/05/2017', 'Ajmer', 'Jaipur', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (180, 15, 1007, true, 4335, 1500, '09/19/2017', '09/18/2017', 'Noida', 'Gandhinagar', 15);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (181, 46, 1004, false, 2856, 1500, '09/09/2017', '09/08/2017', 'Surat', 'Udaipur', 9);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (182, 28, 1024, true, 3312, 1000, '09/12/2017', '09/18/2017', 'Indore', 'Mumbai', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (183, 45, 1017, false, 2208, 1000, '09/01/2017', '09/21/2017', 'Rajkot', 'Bhopal', 31);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (184, 50, 1019, true, 1180, 1500, '09/19/2017', '09/25/2017', 'Nagpur', 'Bangalore', 2);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (185, 20, 1031, true, 1534, 500, '09/06/2017', '09/14/2017', 'Agra', 'Rajkot', 12);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (186, 37, 1046, true, 4598, 1500, '09/07/2017', '09/23/2017', 'Jaipur', 'Indore', 29);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (187, 44, 1033, true, 4693, 1500, '09/26/2017', '09/20/2017', 'Gandhinagar', 'Ahmedabad', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (188, 41, 1019, false, 3862, 1500, '09/09/2017', '09/22/2017', 'Bangalore', 'Jaipur', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (189, 15, 1038, false, 124, 500, '09/04/2017', '09/18/2017', 'Gandhinagar', 'Hyderabad', 33);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (190, 31, 1008, true, 1711, 500, '09/05/2017', '09/01/2017', 'Agra', 'Jaipur', 38);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (191, 25, 1018, false, 3103, 500, '09/19/2017', '09/15/2017', 'Bhilwara', 'Noida', 18);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (192, 27, 1046, true, 332, 1000, '09/18/2017', '09/28/2017', 'Pune', 'Bhilwara', 18);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (193, 11, 1014, true, 1535, 1000, '09/28/2017', '09/17/2017', 'Udaipur', 'Agra', 7);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (194, 45, 1032, true, 4923, 1000, '09/23/2017', '09/22/2017', 'Noida', 'Vadodara', 21);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (195, 35, 1018, true, 4434, 1000, '09/25/2017', '09/14/2017', 'Mumbai', 'Ajmer', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (196, 14, 1010, true, 1617, 1500, '09/17/2017', '09/13/2017', 'Hyderabad', 'Mumbai', 26);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (197, 13, 1010, true, 980, 1000, '09/25/2017', '09/13/2017', 'Jaisalmer', 'Vadodara', 38);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (198, 1, 1046, false, 177, 500, '09/28/2017', '09/27/2017', 'Jaisalmer', 'Nagpur', 24);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (199, 1, 1049, false, 3142, 500, '09/13/2017', '09/01/2017', 'Jaipur', 'Gandhinagar', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (200, 9, 1040, false, 1058, 500, '09/15/2017', '09/07/2017', 'Vadodara', 'Surat', 17);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (201, 8, 1030, false, 1012, 1500, '09/09/2017', '09/07/2017', 'Amritsar', 'Nagpur', 24);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (202, 2, 1011, true, 3241, 1000, '09/21/2017', '09/21/2017', 'Surat', 'Vadodara', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (203, 29, 1048, true, 4276, 1500, '09/26/2017', '09/24/2017', 'Jaipur', 'Ajmer', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (204, 21, 1024, false, 1476, 1500, '09/02/2017', '09/07/2017', 'Surat', 'Pune', 28);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (205, 21, 1007, false, 2739, 1500, '09/01/2017', '09/18/2017', 'Surat', 'Ajmer', 15);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (206, 19, 1046, true, 1101, 500, '09/06/2017', '09/23/2017', 'Bhilwara', 'Jaipur', 1);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (207, 46, 1025, true, 990, 1000, '09/02/2017', '09/11/2017', 'Hyderabad', 'Jaisalmer', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (208, 19, 1033, false, 4279, 500, '09/10/2017', '09/07/2017', 'Indore', 'Amritsar', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (209, 46, 1043, false, 4910, 500, '09/23/2017', '09/03/2017', 'Agra', 'Vadodara', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (210, 27, 1029, false, 2320, 1500, '09/27/2017', '09/11/2017', 'Surat', 'Pune', 20);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (211, 1, 1012, false, 2161, 1500, '09/25/2017', '09/17/2017', 'Vadodara', 'Ahmedabad', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (212, 12, 1009, true, 4143, 1000, '09/11/2017', '09/04/2017', 'Nagpur', 'Agra', 31);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (213, 10, 1049, true, 3027, 1500, '09/12/2017', '09/19/2017', 'Ahmedabad', 'Agra', 15);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (214, 14, 1045, false, 4279, 1500, '09/28/2017', '09/26/2017', 'Bhopal', 'Bangalore', 16);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (215, 5, 1005, false, 2900, 1500, '09/02/2017', '09/03/2017', 'Bangalore', 'Bhopal', 18);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (216, 3, 1021, false, 4239, 1000, '09/09/2017', '09/02/2017', 'Noida', 'Pune', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (217, 32, 1022, false, 1654, 1000, '09/24/2017', '09/26/2017', 'Surat', 'Bhilwara', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (218, 39, 1004, true, 176, 500, '09/17/2017', '09/09/2017', 'Rajkot', 'Pune', 10);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (219, 8, 1028, true, 103, 500, '09/08/2017', '09/05/2017', 'Noida', 'Gandhinagar', 24);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (220, 33, 1025, true, 2815, 1500, '09/15/2017', '09/01/2017', 'Gandhinagar', 'Ajmer', 33);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (221, 23, 1034, false, 3401, 500, '09/05/2017', '09/06/2017', 'Nagpur', 'Ahmedabad', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (222, 42, 1018, true, 1157, 1500, '09/17/2017', '09/27/2017', 'Noida', 'Surat', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (223, 31, 1017, true, 3222, 500, '09/29/2017', '09/15/2017', 'Ahmedabad', 'Pune', 36);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (224, 44, 1026, false, 1460, 1500, '09/07/2017', '09/03/2017', 'Surat', 'Jaipur', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (225, 39, 1006, false, 1164, 500, '09/17/2017', '09/17/2017', 'Nagpur', 'Pune', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (226, 11, 1050, true, 3023, 1500, '09/21/2017', '09/03/2017', 'Hyderabad', 'Ahmedabad', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (227, 8, 1049, true, 3546, 500, '09/05/2017', '09/21/2017', 'Noida', 'Amritsar', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (228, 18, 1029, true, 2465, 1000, '09/10/2017', '09/22/2017', 'Agra', 'Pune', 13);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (229, 8, 1008, true, 3030, 1000, '09/26/2017', '09/24/2017', 'Surat', 'Nagpur', 38);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (230, 38, 1015, false, 959, 1500, '09/29/2017', '09/21/2017', 'Bhopal', 'Bangalore', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (231, 25, 1036, false, 2428, 1500, '09/25/2017', '09/17/2017', 'Agra', 'Gandhinagar', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (232, 3, 1031, true, 382, 1000, '09/28/2017', '09/22/2017', 'Udaipur', 'Bangalore', 17);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (233, 30, 1047, false, 4732, 500, '09/04/2017', '09/24/2017', 'Ahmedabad', 'Mumbai', 36);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (234, 45, 1050, false, 3280, 1000, '09/28/2017', '09/05/2017', 'Jaisalmer', 'Jaisalmer', 20);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (235, 13, 1027, false, 4487, 1500, '09/03/2017', '09/29/2017', 'Agra', 'Amritsar', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (236, 23, 1008, true, 2978, 1000, '09/19/2017', '09/08/2017', 'Hyderabad', 'Noida', 39);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (237, 29, 1049, true, 470, 1000, '09/04/2017', '09/18/2017', 'Pune', 'Ahmedabad', 16);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (238, 27, 1048, false, 3517, 1000, '09/05/2017', '09/24/2017', 'Mumbai', 'Hyderabad', 32);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (239, 49, 1014, false, 1409, 1000, '09/25/2017', '09/20/2017', 'Bhopal', 'Ajmer', 11);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (240, 12, 1035, false, 106, 500, '09/16/2017', '09/02/2017', 'Agra', 'Hyderabad', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (241, 1, 1017, false, 3240, 1500, '09/14/2017', '09/13/2017', 'Jaisalmer', 'Indore', 32);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (242, 10, 1036, true, 3164, 1500, '09/03/2017', '09/08/2017', 'Gandhinagar', 'Udaipur', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (243, 16, 1013, false, 1069, 1500, '09/20/2017', '09/18/2017', 'Bhopal', 'Agra', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (244, 29, 1032, true, 3929, 1500, '09/10/2017', '09/29/2017', 'Jaipur', 'Noida', 32);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (245, 17, 1040, true, 2148, 1500, '09/19/2017', '09/17/2017', 'Udaipur', 'Jaisalmer', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (246, 23, 1009, false, 482, 1500, '09/21/2017', '09/05/2017', 'Udaipur', 'Hyderabad', 16);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (247, 30, 1044, false, 192, 1500, '09/03/2017', '09/04/2017', 'Agra', 'Vadodara', 24);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (248, 22, 1049, false, 4604, 1500, '09/27/2017', '09/04/2017', 'Pune', 'Amritsar', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (249, 3, 1004, true, 748, 500, '09/21/2017', '09/22/2017', 'Mumbai', 'Jaipur', 26);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (250, 42, 1006, false, 4528, 500, '09/28/2017', '09/13/2017', 'Gandhinagar', 'Bhilwara', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (251, 25, 1046, true, 1878, 1500, '09/11/2017', '09/12/2017', 'Ahmedabad', 'Surat', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (252, 30, 1018, false, 3312, 1000, '09/17/2017', '09/01/2017', 'Noida', 'Surat', 15);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (253, 38, 1026, false, 748, 1000, '09/17/2017', '09/16/2017', 'Rajkot', 'Amritsar', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (254, 28, 1031, true, 123, 500, '09/29/2017', '09/29/2017', 'Bangalore', 'Udaipur', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (255, 23, 1034, false, 520, 1500, '09/05/2017', '09/27/2017', 'Gandhinagar', 'Udaipur', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (256, 38, 1044, false, 3106, 500, '09/20/2017', '09/18/2017', 'Ajmer', 'Mumbai', 15);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (257, 7, 1002, false, 1621, 1000, '09/27/2017', '09/10/2017', 'Mumbai', 'Agra', 4);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (258, 34, 1039, false, 4603, 500, '09/24/2017', '09/27/2017', 'Udaipur', 'Udaipur', 38);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (259, 13, 1042, false, 4040, 1000, '09/28/2017', '09/20/2017', 'Jaipur', 'Nagpur', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (260, 17, 1034, false, 4919, 500, '09/10/2017', '09/15/2017', 'Mumbai', 'Bhopal', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (261, 4, 1039, true, 4959, 1000, '09/01/2017', '09/07/2017', 'Indore', 'Bhopal', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (262, 2, 1034, false, 3618, 500, '09/21/2017', '09/29/2017', 'Jaipur', 'Bhopal', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (263, 14, 1016, false, 345, 500, '09/03/2017', '09/08/2017', 'Surat', 'Rajkot', 7);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (264, 30, 1010, true, 4995, 500, '09/06/2017', '09/21/2017', 'Surat', 'Vadodara', 37);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (265, 40, 1002, true, 1501, 1500, '09/23/2017', '09/27/2017', 'Hyderabad', 'Noida', 37);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (266, 25, 1014, false, 3661, 1500, '09/04/2017', '09/23/2017', 'Gandhinagar', 'Bhopal', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (267, 6, 1031, false, 1167, 1500, '09/25/2017', '09/15/2017', 'Mumbai', 'Agra', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (268, 18, 1003, true, 824, 1000, '09/06/2017', '09/12/2017', 'Rajkot', 'Mumbai', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (269, 18, 1037, false, 4119, 500, '09/24/2017', '09/18/2017', 'Surat', 'Gandhinagar', 18);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (270, 16, 1005, true, 2585, 500, '09/24/2017', '09/04/2017', 'Agra', 'Indore', 28);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (271, 50, 1033, true, 1606, 500, '09/26/2017', '09/16/2017', 'Bhopal', 'Noida', 39);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (272, 32, 1009, false, 1447, 500, '09/28/2017', '09/28/2017', 'Vadodara', 'Hyderabad', 11);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (273, 16, 1048, true, 4132, 500, '09/16/2017', '09/25/2017', 'Jaisalmer', 'Jaipur', 10);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (274, 32, 1028, false, 506, 1500, '09/19/2017', '09/09/2017', 'Jaipur', 'Jaipur', 18);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (275, 7, 1032, false, 761, 500, '09/04/2017', '09/08/2017', 'Ahmedabad', 'Pune', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (276, 17, 1013, true, 211, 500, '09/24/2017', '09/12/2017', 'Jaipur', 'Bangalore', 38);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (277, 11, 1018, true, 2650, 500, '09/12/2017', '09/07/2017', 'Mumbai', 'Bhilwara', 20);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (278, 29, 1048, false, 3004, 1000, '09/07/2017', '09/15/2017', 'Jaisalmer', 'Ajmer', 13);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (279, 44, 1047, true, 3491, 500, '09/12/2017', '09/10/2017', 'Noida', 'Noida', 33);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (280, 18, 1038, false, 3214, 500, '09/23/2017', '09/21/2017', 'Bangalore', 'Rajkot', 18);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (281, 18, 1016, true, 1967, 1000, '09/02/2017', '09/20/2017', 'Bhopal', 'Ahmedabad', 39);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (282, 31, 1039, true, 925, 500, '09/28/2017', '09/26/2017', 'Jaisalmer', 'Hyderabad', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (283, 40, 1012, true, 3498, 1000, '09/23/2017', '09/18/2017', 'Vadodara', 'Bangalore', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (284, 32, 1001, false, 3540, 1000, '09/16/2017', '09/29/2017', 'Rajkot', 'Ahmedabad', 20);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (285, 16, 1009, true, 827, 1000, '09/04/2017', '09/14/2017', 'Hyderabad', 'Vadodara', 31);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (286, 22, 1044, true, 2597, 1500, '09/20/2017', '09/09/2017', 'Amritsar', 'Ajmer', 38);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (287, 45, 1001, false, 622, 1500, '09/29/2017', '09/13/2017', 'Noida', 'Udaipur', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (288, 38, 1032, true, 334, 1000, '09/18/2017', '09/23/2017', 'Gandhinagar', 'Rajkot', 32);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (289, 24, 1046, true, 4612, 1000, '09/09/2017', '09/09/2017', 'Udaipur', 'Surat', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (290, 34, 1044, false, 796, 500, '09/18/2017', '09/03/2017', 'Ahmedabad', 'Amritsar', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (291, 36, 1032, true, 308, 1000, '09/20/2017', '09/27/2017', 'Surat', 'Jaipur', 18);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (292, 47, 1018, false, 4679, 500, '09/01/2017', '09/26/2017', 'Bangalore', 'Noida', 9);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (293, 41, 1030, false, 2606, 1500, '09/12/2017', '09/12/2017', 'Gandhinagar', 'Vadodara', 28);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (294, 34, 1045, false, 259, 500, '09/18/2017', '09/08/2017', 'Indore', 'Surat', 4);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (295, 40, 1042, false, 4093, 500, '09/01/2017', '09/08/2017', 'Jaisalmer', 'Noida', 16);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (296, 26, 1032, false, 2586, 1500, '09/05/2017', '09/06/2017', 'Jaisalmer', 'Nagpur', 4);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (297, 27, 1010, false, 3847, 1000, '09/03/2017', '09/13/2017', 'Nagpur', 'Pune', 9);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (298, 36, 1010, false, 4246, 1500, '09/02/2017', '09/19/2017', 'Surat', 'Gandhinagar', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (299, 12, 1048, false, 1167, 1000, '09/06/2017', '09/03/2017', 'Agra', 'Hyderabad', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (300, 19, 1001, true, 2546, 1500, '09/21/2017', '09/08/2017', 'Bhopal', 'Bhilwara', 26);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (301, 50, 1044, false, 3846, 1000, '09/18/2017', '09/26/2017', 'Bhilwara', 'Agra', 28);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (302, 34, 1018, true, 1494, 500, '09/09/2017', '09/24/2017', 'Bhilwara', 'Mumbai', 38);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (303, 11, 1039, false, 356, 1500, '09/13/2017', '09/07/2017', 'Gandhinagar', 'Bangalore', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (304, 20, 1039, false, 2147, 1500, '09/03/2017', '09/01/2017', 'Indore', 'Ajmer', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (305, 44, 1012, false, 3812, 1000, '09/28/2017', '09/16/2017', 'Surat', 'Jaisalmer', 18);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (306, 34, 1040, false, 2003, 500, '09/20/2017', '09/23/2017', 'Bhilwara', 'Gandhinagar', 4);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (307, 50, 1019, true, 3376, 1000, '09/29/2017', '09/17/2017', 'Bangalore', 'Mumbai', 10);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (308, 18, 1024, false, 4606, 500, '09/14/2017', '09/23/2017', 'Udaipur', 'Nagpur', 31);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (309, 42, 1035, true, 3642, 1500, '09/05/2017', '09/25/2017', 'Mumbai', 'Surat', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (310, 22, 1041, false, 4319, 1000, '09/29/2017', '09/18/2017', 'Jaisalmer', 'Jaipur', 29);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (311, 21, 1007, true, 2803, 500, '09/18/2017', '09/09/2017', 'Agra', 'Bhilwara', 7);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (312, 41, 1017, true, 2807, 1500, '09/29/2017', '09/29/2017', 'Ahmedabad', 'Ajmer', 28);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (313, 48, 1034, true, 4854, 1500, '09/06/2017', '09/18/2017', 'Nagpur', 'Vadodara', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (314, 23, 1006, false, 3134, 500, '09/26/2017', '09/16/2017', 'Amritsar', 'Bhilwara', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (315, 8, 1008, true, 3129, 1500, '09/26/2017', '09/09/2017', 'Bhilwara', 'Jaipur', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (316, 36, 1008, true, 1191, 1000, '09/23/2017', '09/26/2017', 'Jaipur', 'Vadodara', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (317, 37, 1045, false, 418, 500, '09/08/2017', '09/16/2017', 'Bhopal', 'Hyderabad', 21);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (318, 28, 1012, false, 1303, 1000, '09/23/2017', '09/27/2017', 'Bhilwara', 'Jaisalmer', 38);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (319, 9, 1047, false, 625, 1000, '09/28/2017', '09/09/2017', 'Bhilwara', 'Gandhinagar', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (320, 35, 1048, true, 3520, 1000, '09/23/2017', '09/10/2017', 'Gandhinagar', 'Bhopal', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (321, 21, 1005, true, 3747, 500, '09/26/2017', '09/29/2017', 'Ahmedabad', 'Indore', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (322, 43, 1040, true, 3476, 1000, '09/06/2017', '09/14/2017', 'Noida', 'Hyderabad', 9);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (323, 37, 1019, true, 1787, 1000, '09/01/2017', '09/21/2017', 'Ahmedabad', 'Rajkot', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (324, 43, 1009, true, 232, 500, '09/08/2017', '09/24/2017', 'Udaipur', 'Ahmedabad', 24);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (325, 32, 1049, false, 4490, 500, '09/16/2017', '09/23/2017', 'Vadodara', 'Bangalore', 24);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (326, 16, 1027, true, 453, 1000, '09/12/2017', '09/25/2017', 'Noida', 'Vadodara', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (327, 33, 1050, false, 1991, 1000, '09/06/2017', '09/15/2017', 'Indore', 'Nagpur', 20);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (328, 32, 1014, true, 4189, 1000, '09/08/2017', '09/06/2017', 'Bhopal', 'Ahmedabad', 36);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (329, 44, 1007, false, 2278, 1500, '09/12/2017', '09/01/2017', 'Mumbai', 'Noida', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (330, 48, 1020, true, 156, 500, '09/01/2017', '09/03/2017', 'Hyderabad', 'Surat', 29);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (331, 47, 1022, false, 392, 500, '09/02/2017', '09/08/2017', 'Bangalore', 'Gandhinagar', 10);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (332, 12, 1004, true, 3209, 500, '09/10/2017', '09/19/2017', 'Bhilwara', 'Udaipur', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (333, 13, 1019, true, 2082, 500, '09/22/2017', '09/13/2017', 'Bhopal', 'Bhopal', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (334, 32, 1022, true, 4715, 1000, '09/01/2017', '09/22/2017', 'Surat', 'Udaipur', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (335, 6, 1010, false, 3966, 500, '09/12/2017', '09/01/2017', 'Bhilwara', 'Indore', 9);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (336, 44, 1021, false, 815, 500, '09/28/2017', '09/17/2017', 'Udaipur', 'Hyderabad', 12);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (337, 39, 1025, true, 3234, 1500, '09/23/2017', '09/24/2017', 'Pune', 'Indore', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (338, 24, 1006, true, 541, 1000, '09/04/2017', '09/16/2017', 'Surat', 'Jaisalmer', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (339, 18, 1027, false, 1681, 1000, '09/16/2017', '09/02/2017', 'Pune', 'Amritsar', 31);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (340, 35, 1047, false, 4027, 500, '09/21/2017', '09/08/2017', 'Hyderabad', 'Pune', 1);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (341, 14, 1038, true, 336, 1500, '09/02/2017', '09/17/2017', 'Gandhinagar', 'Surat', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (342, 8, 1043, false, 3871, 1500, '09/17/2017', '09/07/2017', 'Bangalore', 'Hyderabad', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (343, 49, 1037, true, 4663, 500, '09/09/2017', '09/04/2017', 'Ajmer', 'Bhilwara', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (344, 20, 1015, false, 2962, 500, '09/04/2017', '09/18/2017', 'Vadodara', 'Pune', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (345, 16, 1031, false, 1329, 1500, '09/06/2017', '09/01/2017', 'Ajmer', 'Agra', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (346, 15, 1044, true, 4409, 500, '09/14/2017', '09/24/2017', 'Bhilwara', 'Bangalore', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (347, 26, 1001, true, 1865, 500, '09/04/2017', '09/10/2017', 'Indore', 'Bangalore', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (348, 8, 1030, true, 4383, 500, '09/24/2017', '09/06/2017', 'Udaipur', 'Ahmedabad', 28);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (349, 40, 1017, true, 982, 1500, '09/14/2017', '09/01/2017', 'Rajkot', 'Bhopal', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (350, 32, 1011, false, 3754, 500, '09/29/2017', '09/13/2017', 'Mumbai', 'Amritsar', 29);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (351, 25, 1026, true, 3624, 500, '09/26/2017', '09/05/2017', 'Ajmer', 'Bhopal', 39);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (352, 30, 1035, false, 1539, 1000, '09/03/2017', '09/22/2017', 'Vadodara', 'Jaipur', 16);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (353, 12, 1036, false, 2489, 1500, '09/15/2017', '09/22/2017', 'Indore', 'Bhopal', 18);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (354, 38, 1020, true, 613, 500, '09/11/2017', '09/07/2017', 'Bangalore', 'Nagpur', 28);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (355, 19, 1046, true, 1773, 500, '09/15/2017', '09/09/2017', 'Hyderabad', 'Indore', 33);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (356, 27, 1011, true, 3077, 1000, '09/06/2017', '09/13/2017', 'Ahmedabad', 'Ajmer', 10);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (357, 25, 1015, false, 2999, 1500, '09/12/2017', '09/10/2017', 'Indore', 'Ahmedabad', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (358, 49, 1047, false, 4391, 500, '09/17/2017', '09/28/2017', 'Ahmedabad', 'Noida', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (359, 47, 1048, false, 4777, 1500, '09/03/2017', '09/28/2017', 'Indore', 'Pune', 33);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (360, 40, 1001, false, 3160, 1500, '09/28/2017', '09/03/2017', 'Agra', 'Nagpur', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (361, 26, 1041, false, 364, 500, '09/10/2017', '09/12/2017', 'Nagpur', 'Rajkot', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (362, 46, 1018, true, 4993, 500, '09/15/2017', '09/13/2017', 'Hyderabad', 'Vadodara', 12);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (363, 47, 1022, true, 2494, 500, '09/09/2017', '09/28/2017', 'Amritsar', 'Rajkot', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (364, 36, 1014, false, 4969, 500, '09/27/2017', '09/27/2017', 'Agra', 'Jaipur', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (365, 32, 1015, true, 787, 1500, '09/06/2017', '09/29/2017', 'Amritsar', 'Surat', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (366, 35, 1005, true, 1441, 1500, '09/23/2017', '09/01/2017', 'Hyderabad', 'Surat', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (367, 14, 1032, true, 150, 1500, '09/14/2017', '09/02/2017', 'Agra', 'Indore', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (368, 24, 1038, false, 1770, 1500, '09/26/2017', '09/08/2017', 'Vadodara', 'Bangalore', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (369, 39, 1016, false, 4980, 1500, '09/05/2017', '09/09/2017', 'Bhilwara', 'Udaipur', 15);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (370, 18, 1026, false, 1293, 1000, '09/11/2017', '09/13/2017', 'Udaipur', 'Amritsar', 1);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (371, 26, 1003, false, 568, 1500, '09/09/2017', '09/09/2017', 'Udaipur', 'Mumbai', 12);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (372, 4, 1034, true, 1869, 1500, '09/29/2017', '09/19/2017', 'Surat', 'Udaipur', 15);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (373, 37, 1035, false, 4649, 1000, '09/19/2017', '09/12/2017', 'Hyderabad', 'Bhopal', 27);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (374, 11, 1044, true, 1143, 1000, '09/11/2017', '09/02/2017', 'Vadodara', 'Gandhinagar', 21);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (375, 46, 1009, false, 2342, 1500, '09/17/2017', '09/22/2017', 'Bhopal', 'Hyderabad', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (376, 33, 1018, false, 3909, 1000, '09/21/2017', '09/03/2017', 'Nagpur', 'Bhopal', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (377, 5, 1030, false, 4950, 1000, '09/22/2017', '09/03/2017', 'Amritsar', 'Vadodara', 39);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (378, 40, 1020, true, 4493, 1000, '09/04/2017', '09/10/2017', 'Gandhinagar', 'Hyderabad', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (379, 32, 1012, true, 2674, 1000, '09/15/2017', '09/22/2017', 'Mumbai', 'Agra', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (380, 17, 1041, false, 1731, 500, '09/09/2017', '09/02/2017', 'Jaisalmer', 'Pune', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (381, 28, 1006, false, 3486, 500, '09/29/2017', '09/21/2017', 'Surat', 'Vadodara', 12);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (382, 27, 1050, true, 1023, 1000, '09/26/2017', '09/24/2017', 'Udaipur', 'Amritsar', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (383, 3, 1031, true, 129, 1500, '09/09/2017', '09/26/2017', 'Noida', 'Vadodara', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (384, 13, 1019, false, 4942, 1000, '09/21/2017', '09/16/2017', 'Jaipur', 'Jaipur', 36);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (385, 14, 1050, false, 2619, 500, '09/20/2017', '09/19/2017', 'Bhopal', 'Pune', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (386, 19, 1018, true, 2794, 1000, '09/01/2017', '09/11/2017', 'Noida', 'Mumbai', 2);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (387, 22, 1012, true, 3197, 1000, '09/28/2017', '09/01/2017', 'Noida', 'Agra', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (388, 31, 1049, false, 1178, 500, '09/28/2017', '09/27/2017', 'Mumbai', 'Bangalore', 4);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (389, 1, 1044, false, 3071, 500, '09/24/2017', '09/03/2017', 'Ajmer', 'Jaipur', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (390, 21, 1047, true, 2665, 1000, '09/25/2017', '09/17/2017', 'Bangalore', 'Gandhinagar', 7);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (391, 22, 1006, true, 3546, 1500, '09/01/2017', '09/02/2017', 'Vadodara', 'Pune', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (392, 34, 1012, true, 387, 1000, '09/19/2017', '09/21/2017', 'Bhilwara', 'Amritsar', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (393, 16, 1020, false, 920, 1000, '09/02/2017', '09/15/2017', 'Noida', 'Vadodara', 20);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (394, 32, 1023, false, 2960, 500, '09/26/2017', '09/20/2017', 'Gandhinagar', 'Noida', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (395, 45, 1044, false, 3008, 500, '09/17/2017', '09/07/2017', 'Udaipur', 'Bhilwara', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (396, 14, 1016, true, 1057, 1500, '09/27/2017', '09/16/2017', 'Gandhinagar', 'Gandhinagar', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (397, 40, 1048, true, 773, 500, '09/16/2017', '09/16/2017', 'Gandhinagar', 'Amritsar', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (398, 31, 1045, true, 2594, 500, '09/08/2017', '09/16/2017', 'Pune', 'Noida', 2);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (399, 22, 1002, false, 2859, 1000, '09/14/2017', '09/16/2017', 'Noida', 'Pune', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (400, 14, 1046, false, 3968, 1500, '09/01/2017', '09/11/2017', 'Surat', 'Ahmedabad', 13);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (401, 28, 1029, true, 2032, 1500, '09/22/2017', '09/04/2017', 'Jaisalmer', 'Pune', 16);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (402, 13, 1050, true, 4402, 500, '09/20/2017', '09/08/2017', 'Agra', 'Noida', 2);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (403, 11, 1023, false, 306, 1000, '09/23/2017', '09/03/2017', 'Amritsar', 'Agra', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (404, 26, 1030, true, 2761, 1000, '09/07/2017', '09/26/2017', 'Amritsar', 'Mumbai', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (405, 23, 1007, true, 272, 500, '09/18/2017', '09/06/2017', 'Hyderabad', 'Ajmer', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (406, 19, 1008, false, 493, 500, '09/07/2017', '09/25/2017', 'Jaipur', 'Surat', 10);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (407, 50, 1003, true, 4560, 1500, '09/10/2017', '09/28/2017', 'Jaipur', 'Jaisalmer', 32);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (408, 29, 1044, false, 2860, 500, '09/29/2017', '09/21/2017', 'Rajkot', 'Mumbai', 17);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (409, 39, 1003, false, 2217, 500, '09/25/2017', '09/17/2017', 'Amritsar', 'Rajkot', 26);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (410, 19, 1043, false, 1325, 500, '09/03/2017', '09/04/2017', 'Hyderabad', 'Hyderabad', 7);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (411, 31, 1011, false, 4738, 1500, '09/09/2017', '09/26/2017', 'Indore', 'Pune', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (412, 24, 1026, false, 2536, 500, '09/17/2017', '09/14/2017', 'Noida', 'Ahmedabad', 1);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (413, 2, 1042, false, 3933, 500, '09/08/2017', '09/05/2017', 'Ajmer', 'Jaisalmer', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (414, 37, 1014, false, 2163, 500, '09/02/2017', '09/11/2017', 'Surat', 'Agra', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (415, 35, 1007, false, 1539, 1500, '09/16/2017', '09/04/2017', 'Amritsar', 'Ajmer', 31);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (416, 46, 1021, false, 2592, 1000, '09/22/2017', '09/03/2017', 'Hyderabad', 'Noida', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (417, 43, 1039, true, 4799, 1000, '09/25/2017', '09/09/2017', 'Bhilwara', 'Bhopal', 11);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (418, 42, 1049, false, 1186, 1000, '09/28/2017', '09/20/2017', 'Udaipur', 'Nagpur', 24);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (419, 24, 1026, false, 4112, 1000, '09/02/2017', '09/20/2017', 'Jaisalmer', 'Bhilwara', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (420, 38, 1023, false, 1664, 500, '09/21/2017', '09/01/2017', 'Jaipur', 'Pune', 9);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (421, 8, 1047, false, 500, 500, '09/12/2017', '09/13/2017', 'Surat', 'Pune', 9);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (422, 34, 1049, false, 2475, 1500, '09/02/2017', '09/03/2017', 'Gandhinagar', 'Bhilwara', 38);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (423, 16, 1024, true, 2885, 1500, '09/20/2017', '09/06/2017', 'Bangalore', 'Bhopal', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (424, 42, 1046, false, 2269, 1500, '09/27/2017', '09/04/2017', 'Bhopal', 'Mumbai', 37);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (425, 32, 1017, false, 4139, 500, '09/28/2017', '09/17/2017', 'Hyderabad', 'Hyderabad', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (426, 17, 1019, true, 1323, 1500, '09/21/2017', '09/02/2017', 'Udaipur', 'Hyderabad', 17);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (427, 13, 1002, true, 2601, 500, '09/04/2017', '09/15/2017', 'Nagpur', 'Nagpur', 39);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (428, 19, 1031, false, 4909, 1500, '09/28/2017', '09/26/2017', 'Agra', 'Gandhinagar', 16);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (429, 19, 1047, true, 2884, 500, '09/23/2017', '09/21/2017', 'Rajkot', 'Indore', 7);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (430, 33, 1029, false, 4159, 1500, '09/06/2017', '09/21/2017', 'Vadodara', 'Rajkot', 13);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (431, 21, 1016, false, 4990, 1000, '09/09/2017', '09/26/2017', 'Hyderabad', 'Rajkot', 36);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (432, 36, 1037, true, 3956, 1000, '09/16/2017', '09/29/2017', 'Bhopal', 'Hyderabad', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (433, 27, 1018, true, 2344, 1000, '09/14/2017', '09/25/2017', 'Ahmedabad', 'Nagpur', 6);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (434, 41, 1038, false, 138, 500, '09/11/2017', '09/25/2017', 'Bhopal', 'Rajkot', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (435, 45, 1021, true, 4019, 1500, '09/09/2017', '09/22/2017', 'Agra', 'Bangalore', 12);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (436, 20, 1011, false, 1150, 1000, '09/22/2017', '09/20/2017', 'Nagpur', 'Bangalore', 2);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (437, 2, 1045, true, 914, 1500, '09/13/2017', '09/02/2017', 'Amritsar', 'Hyderabad', 32);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (438, 50, 1025, false, 533, 1500, '09/02/2017', '09/04/2017', 'Mumbai', 'Nagpur', 16);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (439, 6, 1047, true, 738, 1500, '09/13/2017', '09/05/2017', 'Jaipur', 'Amritsar', 39);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (440, 33, 1008, true, 4687, 1000, '09/04/2017', '09/03/2017', 'Mumbai', 'Hyderabad', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (441, 5, 1031, true, 1229, 1500, '09/09/2017', '09/24/2017', 'Mumbai', 'Gandhinagar', 20);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (442, 32, 1004, true, 995, 1500, '09/19/2017', '09/07/2017', 'Noida', 'Agra', 16);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (443, 7, 1021, false, 2583, 500, '09/02/2017', '09/03/2017', 'Udaipur', 'Jaipur', 32);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (444, 40, 1018, true, 2879, 1500, '09/04/2017', '09/05/2017', 'Hyderabad', 'Indore', 11);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (445, 35, 1034, false, 4497, 1000, '09/05/2017', '09/13/2017', 'Bangalore', 'Amritsar', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (446, 24, 1024, true, 1087, 1000, '09/22/2017', '09/08/2017', 'Jaipur', 'Ahmedabad', 4);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (447, 28, 1036, false, 4416, 1000, '09/02/2017', '09/13/2017', 'Hyderabad', 'Agra', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (448, 11, 1005, true, 3964, 1500, '09/20/2017', '09/15/2017', 'Hyderabad', 'Gandhinagar', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (449, 24, 1030, false, 2443, 1500, '09/03/2017', '09/09/2017', 'Rajkot', 'Pune', 12);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (450, 43, 1024, true, 1387, 1500, '09/15/2017', '09/07/2017', 'Vadodara', 'Surat', 11);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (451, 28, 1020, false, 1929, 1500, '09/11/2017', '09/11/2017', 'Ajmer', 'Surat', 26);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (452, 24, 1009, true, 4740, 1000, '09/03/2017', '09/10/2017', 'Udaipur', 'Pune', 33);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (453, 30, 1014, false, 1080, 500, '09/18/2017', '09/15/2017', 'Bangalore', 'Nagpur', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (454, 49, 1047, true, 346, 1500, '09/21/2017', '09/16/2017', 'Bhilwara', 'Bhilwara', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (455, 9, 1015, false, 3017, 1500, '09/05/2017', '09/11/2017', 'Gandhinagar', 'Bangalore', 36);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (456, 23, 1012, true, 1494, 500, '09/12/2017', '09/04/2017', 'Indore', 'Pune', 34);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (457, 2, 1044, true, 3372, 1000, '09/18/2017', '09/06/2017', 'Bhilwara', 'Surat', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (458, 6, 1016, false, 3424, 1500, '09/04/2017', '09/10/2017', 'Jaipur', 'Bhopal', 8);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (459, 2, 1041, true, 367, 1500, '09/25/2017', '09/19/2017', 'Bhopal', 'Nagpur', 7);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (460, 45, 1012, false, 4965, 1500, '09/03/2017', '09/25/2017', 'Surat', 'Pune', 17);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (461, 34, 1025, false, 1149, 500, '09/11/2017', '09/16/2017', 'Indore', 'Jaisalmer', 1);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (462, 14, 1004, true, 1826, 500, '09/19/2017', '09/09/2017', 'Agra', 'Noida', 36);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (463, 47, 1044, true, 217, 500, '09/05/2017', '09/22/2017', 'Bhopal', 'Ahmedabad', 3);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (464, 16, 1034, true, 1293, 1500, '09/24/2017', '09/10/2017', 'Bhilwara', 'Ahmedabad', 30);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (465, 44, 1050, false, 2958, 1000, '09/07/2017', '09/02/2017', 'Bhopal', 'Surat', 10);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (466, 33, 1015, false, 1191, 1500, '09/08/2017', '09/02/2017', 'Surat', 'Mumbai', 29);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (467, 18, 1008, true, 1516, 1500, '09/11/2017', '09/28/2017', 'Agra', 'Gandhinagar', 17);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (468, 32, 1008, true, 4741, 500, '09/20/2017', '09/04/2017', 'Jaisalmer', 'Amritsar', 22);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (469, 19, 1025, false, 3219, 1000, '09/08/2017', '09/08/2017', 'Agra', 'Amritsar', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (470, 42, 1040, false, 2007, 1500, '09/10/2017', '09/05/2017', 'Jaisalmer', 'Ahmedabad', 23);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (471, 37, 1038, true, 2199, 1500, '09/03/2017', '09/17/2017', 'Ajmer', 'Nagpur', 31);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (472, 5, 1032, false, 4911, 1000, '09/14/2017', '09/05/2017', 'Agra', 'Noida', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (473, 23, 1049, false, 2880, 1000, '09/14/2017', '09/16/2017', 'Hyderabad', 'Jaisalmer', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (474, 20, 1030, true, 2922, 1500, '09/18/2017', '09/23/2017', 'Surat', 'Indore', 37);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (475, 34, 1025, false, 1834, 500, '09/11/2017', '09/23/2017', 'Bangalore', 'Bhilwara', 15);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (476, 32, 1036, false, 776, 500, '09/04/2017', '09/25/2017', 'Bhopal', 'Bangalore', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (477, 50, 1040, true, 661, 1500, '09/24/2017', '09/20/2017', 'Nagpur', 'Hyderabad', 16);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (478, 47, 1050, true, 4463, 500, '09/11/2017', '09/08/2017', 'Bhilwara', 'Bhopal', 9);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (479, 12, 1018, true, 280, 1000, '09/02/2017', '09/08/2017', 'Udaipur', 'Gandhinagar', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (480, 46, 1046, false, 1978, 1500, '09/13/2017', '09/10/2017', 'Hyderabad', 'Ajmer', 36);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (481, 25, 1035, true, 1433, 500, '09/28/2017', '09/01/2017', 'Ahmedabad', 'Agra', 24);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (482, 29, 1028, false, 2008, 1500, '09/09/2017', '09/06/2017', 'Noida', 'Indore', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (483, 29, 1002, true, 1127, 500, '09/25/2017', '09/08/2017', 'Pune', 'Mumbai', 35);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (484, 42, 1044, false, 1400, 500, '09/01/2017', '09/23/2017', 'Jaisalmer', 'Jaipur', 28);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (485, 3, 1048, true, 2337, 1500, '09/15/2017', '09/11/2017', 'Vadodara', 'Bangalore', 17);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (486, 22, 1018, true, 3662, 1500, '09/14/2017', '09/19/2017', 'Surat', 'Hyderabad', 18);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (487, 32, 1036, true, 1162, 500, '09/20/2017', '09/28/2017', 'Udaipur', 'Bangalore', 14);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (488, 14, 1008, false, 3588, 500, '09/11/2017', '09/19/2017', 'Ahmedabad', 'Mumbai', 2);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (489, 2, 1039, false, 4281, 500, '09/26/2017', '09/08/2017', 'Gandhinagar', 'Surat', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (490, 16, 1043, true, 4007, 1500, '09/08/2017', '09/16/2017', 'Amritsar', 'Mumbai', 11);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (491, 44, 1030, true, 3062, 1000, '09/15/2017', '09/09/2017', 'Noida', 'Ahmedabad', 38);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (492, 8, 1042, false, 2176, 500, '09/12/2017', '09/24/2017', 'Ahmedabad', 'Noida', 5);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (493, 17, 1004, false, 4771, 500, '09/16/2017', '09/05/2017', 'Vadodara', 'Indore', 40);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (494, 44, 1041, true, 3019, 500, '09/01/2017', '09/23/2017', 'Ajmer', 'Vadodara', 19);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (495, 15, 1027, false, 4662, 500, '09/25/2017', '09/20/2017', 'Vadodara', 'Jaipur', 24);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (496, 12, 1025, false, 2051, 1500, '09/28/2017', '09/19/2017', 'Jaipur', 'Amritsar', 25);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (497, 20, 1045, false, 2392, 500, '09/10/2017', '09/11/2017', 'Indore', 'Ajmer', 17);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (498, 2, 1001, false, 4590, 500, '09/03/2017', '09/05/2017', 'Bhopal', 'Vadodara', 29);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (499, 17, 1003, false, 3523, 1000, '09/21/2017', '09/19/2017', 'Amritsar', 'Agra', 29);
+insert into booking (book_id, cust_id, vehicle_id, driver_requirement, init_reading, deposit, start_time, end_time, from_city, to_city, d_id) values (500, 43, 1050, false, 1392, 1500, '09/03/2017', '09/29/2017', 'Ajmer', 'Nagpur', 33);
+
+
+
+
+insert into billing (bill_id, book_id,  billingDate, advance_amount , f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (1, 3, '2017-09-22',1500, 3005, 2707, 2, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (2, 4, '2017-09-28',1500, 4950, 4655, 2, 4, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (3, 6, '2017-09-25',500, 865, 622, 1, 2, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (4, 7, '2017-09-12', 1500,4112, 3704, 5, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (5, 19,  '2017-09-26',500, 4251, 3708, 5, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (6, 21,  '2017-09-10',1000 ,4888, 3656, 5, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (7, 22, '2017-09-09', 1000,4995, 3645, 4, 4, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (8, 27, '2017-09-05', 500,1528, 1298, 5, 2, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (9, 28,  '2017-09-27', 500,3560, 3533, 4, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (10, 29,'2017-09-06', 1500,2220, 1829, 1, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (11, 32,  '2017-09-09',1000, 1234, 860, 3, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (12, 33,  '2017-09-24', 500,521, 200, 5, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (13, 34,  '2017-09-29', 1000,4991, 4521, 5, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (14, 38,  '2017-09-28', 1500,3721, 1339, 2, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (15, 39, '2017-09-27', 1500,2522, 2222, 5, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (16, 40, '2017-09-24', 1500,3442, 3152, 4, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (17, 42, '2017-09-19', 500,3312, 3071, 2, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (18, 43, '2017-09-23', 1000,1342, 1210, 1, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (19, 45,  '2017-09-13', 500,2001, 1705, 1, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (20, 46,  '2017-09-15', 1500,4901, 4597, 1, 4, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (21, 52,  '2017-09-09',1000, 3502, 3214, 4, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (22, 53,'2017-09-15', 1500,2449, 2200, 3, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (23, 54,  '2017-09-29', 500,4429, 4129, 5, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (24, 55, '2017-09-14', 500,2108, 2027, 1, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (25, 57, '2017-09-26', 1500,4991, 4847, 3, 2, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (26, 67, '2017-09-14', 500,2202, 1869, 2, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (27, 70, '2017-09-27', 1500,1802, 1670, 1, 4, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (28, 74,  '2017-09-19', 500,1218, 927, 4, 4, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (29, 80, '2017-09-21', 500,2315, 2250, 5, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (30, 83, '2017-09-22', 500,875, 672, 3, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (31, 85, '2017-09-23', 1000,3113, 2936, 5, 2, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (32, 86, '2017-09-22', 1000,3912, 3647, 1, 2, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (33, 94,  '2017-09-11', 500,2812, 2532, 3, 2, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (34, 97, '2017-09-22', 500,502, 242, 1, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (35, 100,  '2017-09-26', 1000,3995, 3686, 2, 2, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (36, 107,  '2017-09-16', 1000,4820, 4587, 1, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (37, 110,  '2017-09-10', 1000,2605, 2455, 5, 4, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (38, 113,  '2017-09-23', 1500,1999, 1848, 4, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (39, 121,  '2017-09-22', 500,1501, 1130, 1, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (40, 129,  '2017-09-04', 1500,520, 320, 5, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (41, 134,  '2017-09-26', 1500,3012, 2810, 5, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (42, 141,  '2017-09-16', 1500,1201, 914, 4, 2, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (43, 148,  '2017-09-22', 1500,5112, 4542, 2, 2, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (44, 150,  '2017-09-08', 1000,2399, 2291, 1, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (45, 151, '2017-09-07', 500,3550, 3391, 4, 2, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (46, 160, '2017-09-26', 1500,3901, 3709, 3, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (47, 163,  '2017-09-23', 1500,2312, 1987, 2, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (48, 172,  '2017-09-25', 1500,5112, 4863, 2, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (49, 174,  '2017-09-23', 1000,562, 256, 4, 4, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (50, 186, '2017-09-23', 1500,5912, 4598, 2, 2, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (51, 202, '2017-09-21', 1000,3576, 3241, 2, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (52, 213,  '2017-09-19', 1500,3434, 3027, 2, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (53, 228,  '2017-09-22', 1000,2712, 2465, 2, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (54, 242, '2017-09-08', 1500,3374, 3164, 3, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (55, 254,  '2017-09-29', 500,234, 123, 2, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (56, 258,  '2017-09-27', 500,4709, 4603, 1, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (57, 262, '2017-09-29', 500,3794, 3618, 4, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (58, 263, '2017-09-08', 500,551, 345, 3, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (59, 306,  '2017-09-23', 500,2191, 2003, 5, 4, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (60, 309, '2017-09-25', 1500,3791, 3642, 4, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (61, 312, '2017-09-29', 1500,2997, 2807, 2, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (62, 321,  '2017-09-29', 500,3912, 3747, 4, 4, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (63, 330,  '2017-09-03', 500,345, 156, 4, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (64, 337, '2017-09-24', 1500,3412, 3234, 4, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (65, 353, '2017-09-22', 1500,2689, 2489, 1, 3, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (66, 358, '2017-09-28', 500,4500, 4391, 5, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (67, 364,  '2017-09-27', 500,5260, 4969, 3, 2, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (68, 378, '2017-09-10', 1000,4690, 4493, 1, 5, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (69, 431, '2017-09-26', 1000,5112, 4990, 2, 4, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (70, 432,  '2017-09-29', 1000,4212, 3956, 5, 1, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (71, 435, '2017-09-22', 1500,4363, 4019, 1, 2, NULL, NULL);
+insert into billing (bill_id, book_id,  billingDate, advance_amount ,f_reading, init_reading, driver_rating, veh_rating, tax_amount, total_amount) values (72, 451, '2017-09-11', 1500,2003, 1929, 2, 3, NULL, NULL);
+
+
+insert into choosen_driver (cust_id, d_id, a_id) values (49, 29, 129);
+insert into choosen_driver (cust_id, d_id, a_id) values (7, 10, 110);
+insert into choosen_driver (cust_id, d_id, a_id) values (17, 1, 101);
+insert into choosen_driver (cust_id, d_id, a_id) values (14, 30, 130);
+insert into choosen_driver (cust_id, d_id, a_id) values (15, 31, 131);
+insert into choosen_driver (cust_id, d_id, a_id) values (29, 3, 103);
+insert into choosen_driver (cust_id, d_id, a_id) values (6, 40, 140);
+insert into choosen_driver (cust_id, d_id, a_id) values (23, 34, 134);
+insert into choosen_driver (cust_id, d_id, a_id) values (12, 37, 137);
+insert into choosen_driver (cust_id, d_id, a_id) values (15, 27, 127);
+insert into choosen_driver (cust_id, d_id, a_id) values (23, 5, 105);
+insert into choosen_driver (cust_id, d_id, a_id) values (45, 35, 135);
+insert into choosen_driver (cust_id, d_id, a_id) values (27, 2, 102);
+insert into choosen_driver (cust_id, d_id, a_id) values (48, 30, 130);
+insert into choosen_driver (cust_id, d_id, a_id) values (30, 4, 104);
+insert into choosen_driver (cust_id, d_id, a_id) values (28, 24, 124);
+insert into choosen_driver (cust_id, d_id, a_id) values (26, 3, 103);
+insert into choosen_driver (cust_id, d_id, a_id) values (32, 11, 111);
+insert into choosen_driver (cust_id, d_id, a_id) values (11, 6, 106);
+insert into choosen_driver (cust_id, d_id, a_id) values (18, 39, 139);
+insert into choosen_driver (cust_id, d_id, a_id) values (43, 7, 107);
+insert into choosen_driver (cust_id, d_id, a_id) values (22, 23, 123);
+insert into choosen_driver (cust_id, d_id, a_id) values (46, 22, 122);
+insert into choosen_driver (cust_id, d_id, a_id) values (43, 14, 114);
+insert into choosen_driver (cust_id, d_id, a_id) values (37, 8, 108);
+insert into choosen_driver (cust_id, d_id, a_id) values (2, 27, 127);
+insert into choosen_driver (cust_id, d_id, a_id) values (10, 15, 115);
+insert into choosen_driver (cust_id, d_id, a_id) values (18, 13, 113);
+insert into choosen_driver (cust_id, d_id, a_id) values (10, 9, 109);
+insert into choosen_driver (cust_id, d_id, a_id) values (28, 19, 119);
+insert into choosen_driver (cust_id, d_id, a_id) values (42, 12, 112);
+insert into choosen_driver (cust_id, d_id, a_id) values (41, 28, 128);
+insert into choosen_driver (cust_id, d_id, a_id) values (21, 25, 125);
+insert into choosen_driver (cust_id, d_id, a_id) values (48, 16, 116);
+insert into choosen_driver (cust_id, d_id, a_id) values (39, 22, 122);
+insert into choosen_driver (cust_id, d_id, a_id) values (40, 16, 116);
+insert into choosen_driver (cust_id, d_id, a_id) values (36, 3, 103);
+insert into choosen_driver (cust_id, d_id, a_id) values (45, 9, 109);
+commit;

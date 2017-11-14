@@ -1,0 +1,102 @@
+CREATE SCHEMA CAR_RENTAL;
+SET SEARCH_PATH TO CAR_RENTAL;
+
+CREATE TABLE City(
+C_Name VARCHAR(50),
+State VARCHAR(50),
+PRIMARY KEY(C_Name)
+);
+
+CREATE TABLE Customer(
+Cust_ID bigint NOT NULL,
+Name VARCHAR(50) NOT NULL,
+DOB DATE NOT NULL,
+Gender CHAR(1) NOT NULL,
+Area VARCHAR(50),
+City VARCHAR(50),
+Pincode bigint,
+PRIMARY KEY(Cust_ID),
+FOREIGN KEY (City) REFERENCES City(C_Name) ON UPDATE CASCADE
+);
+
+CREATE TABLE Vehicle(
+Vehicle_ID bigint NOT NULL,
+Name VARCHAR(50) NOT NULL,
+Cost_Per_Mile bigint NOT NULL,
+Type VARCHAR(20),
+Meter_Reading bigint NOT NULL,
+Cost_Per_Day bigint NOT NULL,
+PRIMARY KEY(Vehicle_ID)
+);
+
+
+CREATE TABLE Customer_Email(
+Cust_ID bigint,
+Email VARCHAR(50),
+PRIMARY KEY(Cust_ID,Email),
+FOREIGN KEY (Cust_ID) REFERENCES Customer(Cust_ID) ON UPDATE CASCADE
+);
+
+
+CREATE TABLE d_Allowances(
+a_ID bigint,
+Amount bigint NOT NULL,
+PRIMARY KEY(a_ID)
+);
+
+CREATE TABLE Driver(
+d_ID bigint NOT NULL,
+a_ID bigint,
+Name VARCHAR(50) NOT NULL,
+DOB DATE,
+Gender CHAR(1) NOT NULL,
+PRIMARY KEY(d_ID),
+FOREIGN KEY (a_ID) REFERENCES d_Allowances(a_ID) ON UPDATE CASCADE
+);
+
+CREATE TABLE Choosen_Driver(
+Cust_ID bigint,
+d_ID bigint,
+a_ID bigint,
+PRIMARY KEY(Cust_ID,a_ID,d_ID),
+FOREIGN KEY (d_ID) REFERENCES Driver(d_ID) ON UPDATE CASCADE,
+FOREIGN KEY (a_ID) REFERENCES d_Allowances(a_ID) ON UPDATE CASCADE,
+FOREIGN KEY (Cust_ID) REFERENCES Customer(Cust_ID) ON UPDATE CASCADE
+);
+
+
+
+CREATE TABLE Booking(
+Book_ID bigint,
+Cust_ID bigint NOT NULL,
+Vehicle_ID bigint NOT NULL,
+Driver_Requirement BOOLEAN,
+Init_Reading BIGINT NOT NULL,
+Deposit BIGINT NOT NULL,
+Start_Time DATE NOT NULL,
+END_Time DATE NOT NULL,
+From_City VARCHAR(50) NOT NULL,
+To_City VARCHAR(50),
+d_ID bigint ,
+PRIMARY KEY(Book_ID),
+FOREIGN KEY (d_ID) REFERENCES Driver(d_ID) ON UPDATE CASCADE,
+FOREIGN KEY (Cust_ID) REFERENCES Customer(Cust_ID) ON UPDATE CASCADE,
+Foreign KEY (Vehicle_ID) REFERENCES Vehicle(Vehicle_ID) ON UPDATE CASCADE,
+FOREIGN KEY (From_City) REFERENCES City(C_Name) ON UPDATE CASCADE,
+FOREIGN KEY (To_City) REFERENCES City(C_Name) ON UPDATE CASCADE
+);
+
+CREATE TABLE Billing(
+Bill_ID bigint,
+Book_ID bigint NOT NULL,
+billingDate DATE NOT NULL,
+Advance_Amount BIGINT NOT NULL,
+F_Reading BIGINT NOT NULL,
+Init_Reading BIGINT,
+Driver_Rating bigint,
+Veh_Rating bigint NOT NULL,
+tax_amount real,
+total_amount real,
+PRIMARY KEY(Bill_ID),
+FOREIGN KEY (Book_ID) REFERENCES Booking(Book_ID) ON UPDATE CASCADE
+);
